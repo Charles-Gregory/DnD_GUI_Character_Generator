@@ -35,9 +35,14 @@ namespace DnD_GUI_Character_Generator {
 			}
 		}
 	private: System::Windows::Forms::Label^  Heading;
-	private: System::Windows::Forms::ComboBox^  comboBox1;
-	private: System::Windows::Forms::Label^  ComboBoxLabel1;
+	private: System::Windows::Forms::Label^  additionalOptionsLabel;
+
+
 	private: System::Windows::Forms::MenuStrip^  menuStrip1;
+	private: System::Windows::Forms::CheckBox^  raceCheckBox;
+	private: System::Windows::Forms::ComboBox^  raceComboBox;
+
+
 
 	protected:
 
@@ -57,9 +62,10 @@ namespace DnD_GUI_Character_Generator {
 		void InitializeComponent(void)
 		{
 			this->Heading = (gcnew System::Windows::Forms::Label());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->ComboBoxLabel1 = (gcnew System::Windows::Forms::Label());
+			this->additionalOptionsLabel = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->raceCheckBox = (gcnew System::Windows::Forms::CheckBox());
+			this->raceComboBox = (gcnew System::Windows::Forms::ComboBox());
 			this->SuspendLayout();
 			// 
 			// Heading
@@ -74,28 +80,17 @@ namespace DnD_GUI_Character_Generator {
 			this->Heading->Text = L"Dungeons and Dragons Character Generator";
 			this->Heading->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
-			// comboBox1
+			// additionalOptionsLabel
 			// 
-			this->comboBox1->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"Random character", L"Random character (of a chosen race)" });
-			this->comboBox1->Location = System::Drawing::Point(38, 85);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(204, 21);
-			this->comboBox1->TabIndex = 1;
-			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::comboBox1_SelectedIndexChanged);
-			this->comboBox1->SelectedIndex = 0;
-			// 
-			// ComboBoxLabel1
-			// 
-			this->ComboBoxLabel1->AutoSize = true;
-			this->ComboBoxLabel1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->ComboBoxLabel1->Location = System::Drawing::Point(35, 65);
-			this->ComboBoxLabel1->Name = L"ComboBoxLabel1";
-			this->ComboBoxLabel1->Size = System::Drawing::Size(123, 17);
-			this->ComboBoxLabel1->TabIndex = 2;
-			this->ComboBoxLabel1->Text = L"Choose an option:";
+			this->additionalOptionsLabel->AutoSize = true;
+			this->additionalOptionsLabel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->additionalOptionsLabel->Location = System::Drawing::Point(35, 65);
+			this->additionalOptionsLabel->Name = L"additionalOptionsLabel";
+			this->additionalOptionsLabel->Size = System::Drawing::Size(124, 17);
+			this->additionalOptionsLabel->TabIndex = 2;
+			this->additionalOptionsLabel->Text = L"Additional options:";
+			this->additionalOptionsLabel->Click += gcnew System::EventHandler(this, &MyForm::ComboBoxLabel1_Click);
 			// 
 			// menuStrip1
 			// 
@@ -105,13 +100,41 @@ namespace DnD_GUI_Character_Generator {
 			this->menuStrip1->TabIndex = 3;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
+			// raceCheckBox
+			// 
+			this->raceCheckBox->AutoSize = true;
+			this->raceCheckBox->Location = System::Drawing::Point(38, 90);
+			this->raceCheckBox->Name = L"raceCheckBox";
+			this->raceCheckBox->Size = System::Drawing::Size(123, 17);
+			this->raceCheckBox->TabIndex = 4;
+			this->raceCheckBox->Text = L"Manually select race";
+			this->raceCheckBox->UseVisualStyleBackColor = true;
+			this->raceCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::raceCheckBox_OnCheckedChanged);
+			// 
+			// raceComboBox
+			// 
+			this->raceComboBox->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			this->raceComboBox->Enabled = false;
+			this->raceComboBox->FormattingEnabled = true;
+			this->raceComboBox->Items->AddRange(gcnew cli::array< System::Object^  >(18) {
+				L"Deva", L"Human", L"Dragonborn", L"Drow", L"Dwarf",
+					L"Eladrin", L"Elf", L"Gnome", L"Half-elf", L"Half-orc", L"Halfling", L"Tiefling", L"Githzerai", L"Goliath", L"Minotaur", L"Shardmind",
+					L"Shifter", L"Wilden"
+			});
+			this->raceComboBox->Location = System::Drawing::Point(230, 88);
+			this->raceComboBox->Name = L"raceComboBox";
+			this->raceComboBox->Size = System::Drawing::Size(125, 21);
+			this->raceComboBox->TabIndex = 5;
+			this->raceComboBox->SelectedIndex = 0;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(558, 456);
-			this->Controls->Add(this->ComboBoxLabel1);
-			this->Controls->Add(this->comboBox1);
+			this->Controls->Add(this->raceComboBox);
+			this->Controls->Add(this->raceCheckBox);
+			this->Controls->Add(this->additionalOptionsLabel);
 			this->Controls->Add(this->Heading);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
@@ -128,6 +151,16 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Void label1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
 	private: System::Void comboBox1_SelectedIndexChanged(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void ComboBoxLabel1_Click(System::Object^  sender, System::EventArgs^  e) {
+	}
+	private: System::Void raceCheckBox_OnCheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		if (this->raceCheckBox->Checked == true) {
+			this->raceComboBox->Enabled = true;
+		}
+		else {
+			this->raceComboBox->Enabled = false;
+		}
 	}
 };
 }
