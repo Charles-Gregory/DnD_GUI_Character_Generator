@@ -41,6 +41,16 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::MenuStrip^  menuStrip1;
 	private: System::Windows::Forms::CheckBox^  raceCheckBox;
 	private: System::Windows::Forms::ComboBox^  raceComboBox;
+	private: System::Windows::Forms::CheckBox^  firstNameCheckBox;
+	private: System::Windows::Forms::TextBox^  firstNameTextBox;
+	private: System::Windows::Forms::CheckBox^  lastNameCheckBox;
+	private: System::Windows::Forms::TextBox^  lastNameTextBox;
+	private: System::Windows::Forms::CheckBox^  hairColourCheckBox;
+	private: System::Windows::Forms::ComboBox^  hairColourComboBox;
+
+
+
+
 
 
 
@@ -61,77 +71,118 @@ namespace DnD_GUI_Character_Generator {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->Heading = (gcnew System::Windows::Forms::Label());
 			this->additionalOptionsLabel = (gcnew System::Windows::Forms::Label());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->raceCheckBox = (gcnew System::Windows::Forms::CheckBox());
 			this->raceComboBox = (gcnew System::Windows::Forms::ComboBox());
+			this->firstNameCheckBox = (gcnew System::Windows::Forms::CheckBox());
+			this->firstNameTextBox = (gcnew System::Windows::Forms::TextBox());
+			this->lastNameCheckBox = (gcnew System::Windows::Forms::CheckBox());
+			this->lastNameTextBox = (gcnew System::Windows::Forms::TextBox());
+			this->hairColourCheckBox = (gcnew System::Windows::Forms::CheckBox());
+			this->hairColourComboBox = (gcnew System::Windows::Forms::ComboBox());
 			this->SuspendLayout();
 			// 
 			// Heading
 			// 
-			this->Heading->AutoSize = true;
-			this->Heading->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Heading->Location = System::Drawing::Point(33, 9);
+			resources->ApplyResources(this->Heading, L"Heading");
 			this->Heading->Name = L"Heading";
-			this->Heading->Size = System::Drawing::Size(490, 29);
-			this->Heading->TabIndex = 0;
-			this->Heading->Text = L"Dungeons and Dragons Character Generator";
 			this->Heading->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
 			// 
 			// additionalOptionsLabel
 			// 
-			this->additionalOptionsLabel->AutoSize = true;
-			this->additionalOptionsLabel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-			this->additionalOptionsLabel->Location = System::Drawing::Point(35, 65);
+			resources->ApplyResources(this->additionalOptionsLabel, L"additionalOptionsLabel");
 			this->additionalOptionsLabel->Name = L"additionalOptionsLabel";
-			this->additionalOptionsLabel->Size = System::Drawing::Size(124, 17);
-			this->additionalOptionsLabel->TabIndex = 2;
-			this->additionalOptionsLabel->Text = L"Additional options:";
 			this->additionalOptionsLabel->Click += gcnew System::EventHandler(this, &MyForm::ComboBoxLabel1_Click);
 			// 
 			// menuStrip1
 			// 
-			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(558, 24);
-			this->menuStrip1->TabIndex = 3;
-			this->menuStrip1->Text = L"menuStrip1";
 			// 
 			// raceCheckBox
 			// 
-			this->raceCheckBox->AutoSize = true;
-			this->raceCheckBox->Location = System::Drawing::Point(38, 90);
+			resources->ApplyResources(this->raceCheckBox, L"raceCheckBox");
 			this->raceCheckBox->Name = L"raceCheckBox";
-			this->raceCheckBox->Size = System::Drawing::Size(123, 17);
-			this->raceCheckBox->TabIndex = 4;
-			this->raceCheckBox->Text = L"Manually select race";
 			this->raceCheckBox->UseVisualStyleBackColor = true;
 			this->raceCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::raceCheckBox_OnCheckedChanged);
 			// 
 			// raceComboBox
 			// 
 			this->raceComboBox->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
-			this->raceComboBox->Enabled = false;
+			resources->ApplyResources(this->raceComboBox, L"raceComboBox");
 			this->raceComboBox->FormattingEnabled = true;
 			this->raceComboBox->Items->AddRange(gcnew cli::array< System::Object^  >(18) {
-				L"Deva", L"Human", L"Dragonborn", L"Drow", L"Dwarf",
-					L"Eladrin", L"Elf", L"Gnome", L"Half-elf", L"Half-orc", L"Halfling", L"Tiefling", L"Githzerai", L"Goliath", L"Minotaur", L"Shardmind",
-					L"Shifter", L"Wilden"
+				resources->GetString(L"raceComboBox.Items"),
+					resources->GetString(L"raceComboBox.Items1"), resources->GetString(L"raceComboBox.Items2"), resources->GetString(L"raceComboBox.Items3"),
+					resources->GetString(L"raceComboBox.Items4"), resources->GetString(L"raceComboBox.Items5"), resources->GetString(L"raceComboBox.Items6"),
+					resources->GetString(L"raceComboBox.Items7"), resources->GetString(L"raceComboBox.Items8"), resources->GetString(L"raceComboBox.Items9"),
+					resources->GetString(L"raceComboBox.Items10"), resources->GetString(L"raceComboBox.Items11"), resources->GetString(L"raceComboBox.Items12"),
+					resources->GetString(L"raceComboBox.Items13"), resources->GetString(L"raceComboBox.Items14"), resources->GetString(L"raceComboBox.Items15"),
+					resources->GetString(L"raceComboBox.Items16"), resources->GetString(L"raceComboBox.Items17")
 			});
-			this->raceComboBox->Location = System::Drawing::Point(230, 88);
 			this->raceComboBox->Name = L"raceComboBox";
-			this->raceComboBox->Size = System::Drawing::Size(125, 21);
-			this->raceComboBox->TabIndex = 5;
-			this->raceComboBox->SelectedIndex = 0;
+			// 
+			// firstNameCheckBox
+			// 
+			resources->ApplyResources(this->firstNameCheckBox, L"firstNameCheckBox");
+			this->firstNameCheckBox->Name = L"firstNameCheckBox";
+			this->firstNameCheckBox->UseVisualStyleBackColor = true;
+			this->firstNameCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::firstNameCheckBox_CheckedChanged);
+			// 
+			// firstNameTextBox
+			// 
+			resources->ApplyResources(this->firstNameTextBox, L"firstNameTextBox");
+			this->firstNameTextBox->Name = L"firstNameTextBox";
+			// 
+			// lastNameCheckBox
+			// 
+			resources->ApplyResources(this->lastNameCheckBox, L"lastNameCheckBox");
+			this->lastNameCheckBox->Name = L"lastNameCheckBox";
+			this->lastNameCheckBox->UseVisualStyleBackColor = true;
+			this->lastNameCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::checkBox1_CheckedChanged);
+			// 
+			// lastNameTextBox
+			// 
+			resources->ApplyResources(this->lastNameTextBox, L"lastNameTextBox");
+			this->lastNameTextBox->Name = L"lastNameTextBox";
+			// 
+			// hairColourCheckBox
+			// 
+			resources->ApplyResources(this->hairColourCheckBox, L"hairColourCheckBox");
+			this->hairColourCheckBox->Name = L"hairColourCheckBox";
+			this->hairColourCheckBox->UseVisualStyleBackColor = true;
+			this->hairColourCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::hairColourCheckBox_CheckedChanged);
+			// 
+			// hairColourComboBox
+			// 
+			this->hairColourComboBox->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
+			resources->ApplyResources(this->hairColourComboBox, L"hairColourComboBox");
+			this->hairColourComboBox->FormattingEnabled = true;
+			this->hairColourComboBox->Items->AddRange(gcnew cli::array< System::Object^  >(21) {
+				resources->GetString(L"hairColourComboBox.Items"),
+					resources->GetString(L"hairColourComboBox.Items1"), resources->GetString(L"hairColourComboBox.Items2"), resources->GetString(L"hairColourComboBox.Items3"),
+					resources->GetString(L"hairColourComboBox.Items4"), resources->GetString(L"hairColourComboBox.Items5"), resources->GetString(L"hairColourComboBox.Items6"),
+					resources->GetString(L"hairColourComboBox.Items7"), resources->GetString(L"hairColourComboBox.Items8"), resources->GetString(L"hairColourComboBox.Items9"),
+					resources->GetString(L"hairColourComboBox.Items10"), resources->GetString(L"hairColourComboBox.Items11"), resources->GetString(L"hairColourComboBox.Items12"),
+					resources->GetString(L"hairColourComboBox.Items13"), resources->GetString(L"hairColourComboBox.Items14"), resources->GetString(L"hairColourComboBox.Items15"),
+					resources->GetString(L"hairColourComboBox.Items16"), resources->GetString(L"hairColourComboBox.Items17"), resources->GetString(L"hairColourComboBox.Items18"),
+					resources->GetString(L"hairColourComboBox.Items19"), resources->GetString(L"hairColourComboBox.Items20")
+			});
+			this->hairColourComboBox->Name = L"hairColourComboBox";
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(558, 456);
+			this->Controls->Add(this->hairColourComboBox);
+			this->Controls->Add(this->hairColourCheckBox);
+			this->Controls->Add(this->lastNameTextBox);
+			this->Controls->Add(this->lastNameCheckBox);
+			this->Controls->Add(this->firstNameTextBox);
+			this->Controls->Add(this->firstNameCheckBox);
 			this->Controls->Add(this->raceComboBox);
 			this->Controls->Add(this->raceCheckBox);
 			this->Controls->Add(this->additionalOptionsLabel);
@@ -139,7 +190,6 @@ namespace DnD_GUI_Character_Generator {
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
-			this->Text = L"Dungeons and Dragons Character Generator";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -160,6 +210,30 @@ namespace DnD_GUI_Character_Generator {
 		}
 		else {
 			this->raceComboBox->Enabled = false;
+		}
+	}
+	private: System::Void firstNameCheckBox_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		if (this->firstNameCheckBox->Checked == true) {
+			this->firstNameTextBox->Enabled = true;
+		}
+		else {
+			this->firstNameTextBox->Enabled = false;
+		}
+	}
+	private: System::Void checkBox1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		if (this->lastNameCheckBox->Checked == true) {
+			this->lastNameTextBox->Enabled = true;
+		}
+		else {
+			this->lastNameTextBox->Enabled = false;
+		}
+	}
+	private: System::Void hairColourCheckBox_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
+		if (this->hairColourCheckBox->Checked == true) {
+			this->hairColourComboBox->Enabled = true;
+		}
+		else {
+			this->hairColourComboBox->Enabled = false;
 		}
 	}
 };

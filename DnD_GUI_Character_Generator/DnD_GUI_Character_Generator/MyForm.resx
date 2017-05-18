@@ -117,7 +117,463 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Heading.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Heading.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 18pt</value>
+  </data>
+  <data name="Heading.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 9</value>
+  </data>
+  <data name="Heading.Size" type="System.Drawing.Size, System.Drawing">
+    <value>490, 29</value>
+  </data>
+  <data name="Heading.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Heading.Text" xml:space="preserve">
+    <value>Dungeons and Dragons Character Generator</value>
+  </data>
+  <data name="&gt;&gt;Heading.Name" xml:space="preserve">
+    <value>Heading</value>
+  </data>
+  <data name="&gt;&gt;Heading.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Heading.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Heading.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="additionalOptionsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="additionalOptionsLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="additionalOptionsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 65</value>
+  </data>
+  <data name="additionalOptionsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 17</value>
+  </data>
+  <data name="additionalOptionsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="additionalOptionsLabel.Text" xml:space="preserve">
+    <value>Additional options:</value>
+  </data>
+  <data name="&gt;&gt;additionalOptionsLabel.Name" xml:space="preserve">
+    <value>additionalOptionsLabel</value>
+  </data>
+  <data name="&gt;&gt;additionalOptionsLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;additionalOptionsLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;additionalOptionsLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>558, 24</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="raceCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="raceCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 177</value>
+  </data>
+  <data name="raceCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="raceCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="raceCheckBox.Text" xml:space="preserve">
+    <value>Manually select race</value>
+  </data>
+  <data name="&gt;&gt;raceCheckBox.Name" xml:space="preserve">
+    <value>raceCheckBox</value>
+  </data>
+  <data name="&gt;&gt;raceCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;raceCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;raceCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="raceComboBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="raceComboBox.Items" xml:space="preserve">
+    <value>Deva</value>
+  </data>
+  <data name="raceComboBox.Items1" xml:space="preserve">
+    <value>Human</value>
+  </data>
+  <data name="raceComboBox.Items2" xml:space="preserve">
+    <value>Dragonborn</value>
+  </data>
+  <data name="raceComboBox.Items3" xml:space="preserve">
+    <value>Drow</value>
+  </data>
+  <data name="raceComboBox.Items4" xml:space="preserve">
+    <value>Dwarf</value>
+  </data>
+  <data name="raceComboBox.Items5" xml:space="preserve">
+    <value>Eladrin</value>
+  </data>
+  <data name="raceComboBox.Items6" xml:space="preserve">
+    <value>Elf</value>
+  </data>
+  <data name="raceComboBox.Items7" xml:space="preserve">
+    <value>Gnome</value>
+  </data>
+  <data name="raceComboBox.Items8" xml:space="preserve">
+    <value>Half-elf</value>
+  </data>
+  <data name="raceComboBox.Items9" xml:space="preserve">
+    <value>Half-orc</value>
+  </data>
+  <data name="raceComboBox.Items10" xml:space="preserve">
+    <value>Halfling</value>
+  </data>
+  <data name="raceComboBox.Items11" xml:space="preserve">
+    <value>Tiefling</value>
+  </data>
+  <data name="raceComboBox.Items12" xml:space="preserve">
+    <value>Githzerai</value>
+  </data>
+  <data name="raceComboBox.Items13" xml:space="preserve">
+    <value>Goliath</value>
+  </data>
+  <data name="raceComboBox.Items14" xml:space="preserve">
+    <value>Minotaur</value>
+  </data>
+  <data name="raceComboBox.Items15" xml:space="preserve">
+    <value>Shardmind</value>
+  </data>
+  <data name="raceComboBox.Items16" xml:space="preserve">
+    <value>Shifter</value>
+  </data>
+  <data name="raceComboBox.Items17" xml:space="preserve">
+    <value>Wilden</value>
+  </data>
+  <data name="raceComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 175</value>
+  </data>
+  <data name="raceComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 21</value>
+  </data>
+  <data name="raceComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;raceComboBox.Name" xml:space="preserve">
+    <value>raceComboBox</value>
+  </data>
+  <data name="&gt;&gt;raceComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;raceComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;raceComboBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="firstNameCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="firstNameCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 93</value>
+  </data>
+  <data name="firstNameCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 17</value>
+  </data>
+  <data name="firstNameCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="firstNameCheckBox.Text" xml:space="preserve">
+    <value>Manually select first name</value>
+  </data>
+  <data name="&gt;&gt;firstNameCheckBox.Name" xml:space="preserve">
+    <value>firstNameCheckBox</value>
+  </data>
+  <data name="&gt;&gt;firstNameCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;firstNameCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;firstNameCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="firstNameTextBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="firstNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 91</value>
+  </data>
+  <data name="firstNameTextBox.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="firstNameTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="firstNameTextBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>178, 20</value>
+  </data>
+  <data name="firstNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 20</value>
+  </data>
+  <data name="firstNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextBox.Name" xml:space="preserve">
+    <value>firstNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;firstNameTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lastNameCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lastNameCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lastNameCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 121</value>
+  </data>
+  <data name="lastNameCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 17</value>
+  </data>
+  <data name="lastNameCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lastNameCheckBox.Text" xml:space="preserve">
+    <value>Manually select last name</value>
+  </data>
+  <data name="&gt;&gt;lastNameCheckBox.Name" xml:space="preserve">
+    <value>lastNameCheckBox</value>
+  </data>
+  <data name="&gt;&gt;lastNameCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lastNameCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lastNameCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lastNameTextBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lastNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 119</value>
+  </data>
+  <data name="lastNameTextBox.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="lastNameTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="lastNameTextBox.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>178, 20</value>
+  </data>
+  <data name="lastNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 20</value>
+  </data>
+  <data name="lastNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Name" xml:space="preserve">
+    <value>lastNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lastNameTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="hairColourCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="hairColourCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="hairColourCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 149</value>
+  </data>
+  <data name="hairColourCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 17</value>
+  </data>
+  <data name="hairColourCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="hairColourCheckBox.Text" xml:space="preserve">
+    <value>Manually select hair colour</value>
+  </data>
+  <data name="&gt;&gt;hairColourCheckBox.Name" xml:space="preserve">
+    <value>hairColourCheckBox</value>
+  </data>
+  <data name="&gt;&gt;hairColourCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hairColourCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;hairColourCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="hairColourComboBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="hairColourComboBox.Items" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="hairColourComboBox.Items1" xml:space="preserve">
+    <value>Brunette</value>
+  </data>
+  <data name="hairColourComboBox.Items2" xml:space="preserve">
+    <value>Dark brown</value>
+  </data>
+  <data name="hairColourComboBox.Items3" xml:space="preserve">
+    <value>Medium brown</value>
+  </data>
+  <data name="hairColourComboBox.Items4" xml:space="preserve">
+    <value>Light brown</value>
+  </data>
+  <data name="hairColourComboBox.Items5" xml:space="preserve">
+    <value>Chestnut brown</value>
+  </data>
+  <data name="hairColourComboBox.Items6" xml:space="preserve">
+    <value>Light chestnut brown</value>
+  </data>
+  <data name="hairColourComboBox.Items7" xml:space="preserve">
+    <value>Auburn</value>
+  </data>
+  <data name="hairColourComboBox.Items8" xml:space="preserve">
+    <value>Copper</value>
+  </data>
+  <data name="hairColourComboBox.Items9" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="hairColourComboBox.Items10" xml:space="preserve">
+    <value>Titian</value>
+  </data>
+  <data name="hairColourComboBox.Items11" xml:space="preserve">
+    <value>Strawberry blond</value>
+  </data>
+  <data name="hairColourComboBox.Items12" xml:space="preserve">
+    <value>Light blond</value>
+  </data>
+  <data name="hairColourComboBox.Items13" xml:space="preserve">
+    <value>Dark blond</value>
+  </data>
+  <data name="hairColourComboBox.Items14" xml:space="preserve">
+    <value>Medium blond</value>
+  </data>
+  <data name="hairColourComboBox.Items15" xml:space="preserve">
+    <value>Grey</value>
+  </data>
+  <data name="hairColourComboBox.Items16" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="hairColourComboBox.Items17" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="hairColourComboBox.Items18" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="hairColourComboBox.Items19" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="hairColourComboBox.Items20" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="hairColourComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>199, 147</value>
+  </data>
+  <data name="hairColourComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 21</value>
+  </data>
+  <data name="hairColourComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;hairColourComboBox.Name" xml:space="preserve">
+    <value>hairColourComboBox</value>
+  </data>
+  <data name="&gt;&gt;hairColourComboBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hairColourComboBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;hairColourComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>558, 456</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Dungeons and Dragons Character Generator</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MyForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
