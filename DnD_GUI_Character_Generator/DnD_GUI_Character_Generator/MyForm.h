@@ -38,7 +38,7 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::Label^  additionalOptionsLabel;
 
 
-	private: System::Windows::Forms::MenuStrip^  menuStrip1;
+
 	private: System::Windows::Forms::CheckBox^  raceCheckBox;
 	private: System::Windows::Forms::ComboBox^  raceComboBox;
 	private: System::Windows::Forms::CheckBox^  firstNameCheckBox;
@@ -47,6 +47,30 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::TextBox^  lastNameTextBox;
 	private: System::Windows::Forms::CheckBox^  hairColourCheckBox;
 	private: System::Windows::Forms::ComboBox^  hairColourComboBox;
+	private: System::Windows::Forms::Label^  characterLabel;
+	private: System::Windows::Forms::Label^  firstNameLabel;
+	private: System::Windows::Forms::Label^  lastNameLabel;
+	private: System::Windows::Forms::Label^  hairColourLabel;
+	private: System::Windows::Forms::Label^  raceLabel;
+	private: System::Windows::Forms::Label^  heightLabel;
+	private: System::Windows::Forms::Label^  ageLabel;
+	private: System::Windows::Forms::TextBox^  firstNameTextBoxOutput;
+	private: System::Windows::Forms::TextBox^  lastNameTextBoxOutput;
+	private: System::Windows::Forms::TextBox^  hairColourTextBoxOutput;
+	private: System::Windows::Forms::TextBox^  raceTextBoxOutput;
+	private: System::Windows::Forms::TextBox^  heightTextBoxOutput;
+	private: System::Windows::Forms::TextBox^  ageTextBoxOutput;
+	private: System::Windows::Forms::Button^  randomiseButton;
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -74,7 +98,6 @@ namespace DnD_GUI_Character_Generator {
 			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->Heading = (gcnew System::Windows::Forms::Label());
 			this->additionalOptionsLabel = (gcnew System::Windows::Forms::Label());
-			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->raceCheckBox = (gcnew System::Windows::Forms::CheckBox());
 			this->raceComboBox = (gcnew System::Windows::Forms::ComboBox());
 			this->firstNameCheckBox = (gcnew System::Windows::Forms::CheckBox());
@@ -83,6 +106,20 @@ namespace DnD_GUI_Character_Generator {
 			this->lastNameTextBox = (gcnew System::Windows::Forms::TextBox());
 			this->hairColourCheckBox = (gcnew System::Windows::Forms::CheckBox());
 			this->hairColourComboBox = (gcnew System::Windows::Forms::ComboBox());
+			this->characterLabel = (gcnew System::Windows::Forms::Label());
+			this->firstNameLabel = (gcnew System::Windows::Forms::Label());
+			this->lastNameLabel = (gcnew System::Windows::Forms::Label());
+			this->hairColourLabel = (gcnew System::Windows::Forms::Label());
+			this->raceLabel = (gcnew System::Windows::Forms::Label());
+			this->heightLabel = (gcnew System::Windows::Forms::Label());
+			this->ageLabel = (gcnew System::Windows::Forms::Label());
+			this->firstNameTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->lastNameTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->hairColourTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->raceTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->heightTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->ageTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->randomiseButton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// Heading
@@ -96,11 +133,6 @@ namespace DnD_GUI_Character_Generator {
 			resources->ApplyResources(this->additionalOptionsLabel, L"additionalOptionsLabel");
 			this->additionalOptionsLabel->Name = L"additionalOptionsLabel";
 			this->additionalOptionsLabel->Click += gcnew System::EventHandler(this, &MyForm::ComboBoxLabel1_Click);
-			// 
-			// menuStrip1
-			// 
-			resources->ApplyResources(this->menuStrip1, L"menuStrip1");
-			this->menuStrip1->Name = L"menuStrip1";
 			// 
 			// raceCheckBox
 			// 
@@ -173,10 +205,102 @@ namespace DnD_GUI_Character_Generator {
 			});
 			this->hairColourComboBox->Name = L"hairColourComboBox";
 			// 
+			// characterLabel
+			// 
+			resources->ApplyResources(this->characterLabel, L"characterLabel");
+			this->characterLabel->Name = L"characterLabel";
+			// 
+			// firstNameLabel
+			// 
+			resources->ApplyResources(this->firstNameLabel, L"firstNameLabel");
+			this->firstNameLabel->Name = L"firstNameLabel";
+			// 
+			// lastNameLabel
+			// 
+			resources->ApplyResources(this->lastNameLabel, L"lastNameLabel");
+			this->lastNameLabel->Name = L"lastNameLabel";
+			// 
+			// hairColourLabel
+			// 
+			resources->ApplyResources(this->hairColourLabel, L"hairColourLabel");
+			this->hairColourLabel->Name = L"hairColourLabel";
+			// 
+			// raceLabel
+			// 
+			resources->ApplyResources(this->raceLabel, L"raceLabel");
+			this->raceLabel->Name = L"raceLabel";
+			// 
+			// heightLabel
+			// 
+			resources->ApplyResources(this->heightLabel, L"heightLabel");
+			this->heightLabel->Name = L"heightLabel";
+			// 
+			// ageLabel
+			// 
+			resources->ApplyResources(this->ageLabel, L"ageLabel");
+			this->ageLabel->Name = L"ageLabel";
+			// 
+			// firstNameTextBoxOutput
+			// 
+			resources->ApplyResources(this->firstNameTextBoxOutput, L"firstNameTextBoxOutput");
+			this->firstNameTextBoxOutput->Name = L"firstNameTextBoxOutput";
+			this->firstNameTextBoxOutput->ReadOnly = true;
+			// 
+			// lastNameTextBoxOutput
+			// 
+			resources->ApplyResources(this->lastNameTextBoxOutput, L"lastNameTextBoxOutput");
+			this->lastNameTextBoxOutput->Name = L"lastNameTextBoxOutput";
+			this->lastNameTextBoxOutput->ReadOnly = true;
+			// 
+			// hairColourTextBoxOutput
+			// 
+			resources->ApplyResources(this->hairColourTextBoxOutput, L"hairColourTextBoxOutput");
+			this->hairColourTextBoxOutput->Name = L"hairColourTextBoxOutput";
+			this->hairColourTextBoxOutput->ReadOnly = true;
+			// 
+			// raceTextBoxOutput
+			// 
+			resources->ApplyResources(this->raceTextBoxOutput, L"raceTextBoxOutput");
+			this->raceTextBoxOutput->Name = L"raceTextBoxOutput";
+			this->raceTextBoxOutput->ReadOnly = true;
+			// 
+			// heightTextBoxOutput
+			// 
+			resources->ApplyResources(this->heightTextBoxOutput, L"heightTextBoxOutput");
+			this->heightTextBoxOutput->Name = L"heightTextBoxOutput";
+			this->heightTextBoxOutput->ReadOnly = true;
+			// 
+			// ageTextBoxOutput
+			// 
+			resources->ApplyResources(this->ageTextBoxOutput, L"ageTextBoxOutput");
+			this->ageTextBoxOutput->Name = L"ageTextBoxOutput";
+			this->ageTextBoxOutput->ReadOnly = true;
+			// 
+			// randomiseButton
+			// 
+			resources->ApplyResources(this->randomiseButton, L"randomiseButton");
+			this->randomiseButton->Name = L"randomiseButton";
+			this->randomiseButton->UseVisualStyleBackColor = true;
+			this->randomiseButton->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			// 
 			// MyForm
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->randomiseButton);
+			this->Controls->Add(this->ageTextBoxOutput);
+			this->Controls->Add(this->heightTextBoxOutput);
+			this->Controls->Add(this->raceTextBoxOutput);
+			this->Controls->Add(this->hairColourTextBoxOutput);
+			this->Controls->Add(this->lastNameTextBoxOutput);
+			this->Controls->Add(this->firstNameTextBoxOutput);
+			this->Controls->Add(this->ageLabel);
+			this->Controls->Add(this->heightLabel);
+			this->Controls->Add(this->raceLabel);
+			this->Controls->Add(this->hairColourLabel);
+			this->Controls->Add(this->lastNameLabel);
+			this->Controls->Add(this->firstNameLabel);
+			this->Controls->Add(this->characterLabel);
 			this->Controls->Add(this->hairColourComboBox);
 			this->Controls->Add(this->hairColourCheckBox);
 			this->Controls->Add(this->lastNameTextBox);
@@ -187,8 +311,6 @@ namespace DnD_GUI_Character_Generator {
 			this->Controls->Add(this->raceCheckBox);
 			this->Controls->Add(this->additionalOptionsLabel);
 			this->Controls->Add(this->Heading);
-			this->Controls->Add(this->menuStrip1);
-			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
@@ -207,6 +329,7 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Void raceCheckBox_OnCheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		if (this->raceCheckBox->Checked == true) {
 			this->raceComboBox->Enabled = true;
+			this->raceComboBox->SelectedIndex = 0;
 		}
 		else {
 			this->raceComboBox->Enabled = false;
@@ -231,10 +354,14 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Void hairColourCheckBox_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		if (this->hairColourCheckBox->Checked == true) {
 			this->hairColourComboBox->Enabled = true;
+			this->hairColourComboBox->SelectedIndex = 0;
 		}
 		else {
 			this->hairColourComboBox->Enabled = false;
 		}
+	}
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+
 	}
 };
 }
