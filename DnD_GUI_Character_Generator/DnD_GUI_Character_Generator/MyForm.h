@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 namespace DnD_GUI_Character_Generator {
 
 	using namespace System;
@@ -60,10 +62,6 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::TextBox^  ageTextBoxOutput;
 	private: System::Windows::Forms::Button^  randomiseButton;
 	private: Character^ newCharacter;
-
-	//protected:
-
-	//protected:
 
 	private:
 		/// <summary>
@@ -269,7 +267,20 @@ namespace DnD_GUI_Character_Generator {
 		}
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-
+		//Randomise all character traits
+		this->newCharacter->randomise();
+		//Assign first name
+		this->firstNameTextBoxOutput->Text = this->newCharacter->getFirstName();
+		//Assign last name
+		this->lastNameTextBoxOutput->Text = this->newCharacter->getLastName();
+		//Assign hair colour
+		this->hairColourTextBoxOutput->Text = this->newCharacter->getHairColour();
+		//Assign race
+		this->raceTextBoxOutput->Text = this->newCharacter->getRace();
+		//Assign height
+		this->heightTextBoxOutput->Text = Convert::ToString(this->newCharacter->getHeight());
+		//Assign age
+		this->ageTextBoxOutput->Text = Convert::ToString(this->newCharacter->getAge());
 	}
 };
 }

@@ -12,8 +12,8 @@ private:
 	static String^ lastName;
 	static String^ hairColour;
 	static String^ race;
-	static int height;
-	static int age;
+	static Int16^ height;
+	static Int16^ age;
 
 	static array<array<String^>^>^ firstNames = gcnew array<array<String^>^> {
 		//Deva [0]
@@ -84,22 +84,22 @@ public:
 	static void randomise();
 
 	static String^ getFirstName();
-	static void setFirstName(String^ firstName);
+	void setFirstName(String^ firstName);
 
 	static String^ getLastName();
-	static void setLastName(String^ lastName);
+	void setLastName(String^ lastName);
 
 	static String^ getHairColour();
-	static void setHairColour(String^ hairColour);
+	void setHairColour(String^ hairColour);
 
 	static String^ getRace();
-	static void setRace(String^ race);
+	void setRace(String^ race);
 
-	static int getHeight();
-	static void setHeight(int height);
+	static Int16^ getHeight();
+	void setHeight(Int16^ height);
 
-	static int getAge();
-	static void setAge(int age);
+	static Int16^ getAge();
+	void setAge(Int16^ age);
 };
 
 #endif

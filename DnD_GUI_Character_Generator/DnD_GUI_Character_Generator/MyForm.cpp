@@ -1,7 +1,7 @@
-#include <string>
+//#include <string>
 #include <time.h>
-#include "MyForm.h"
 #include "Character.h"
+#include "MyForm.h"
 	
 using namespace System;
 using namespace System::Windows::Forms;

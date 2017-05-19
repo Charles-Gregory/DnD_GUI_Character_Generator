@@ -81,48 +81,48 @@ void Character::randomRace()
 void Character::randomHeight()
 {
 	if (race == "Deva")
-		height = ((rand() % 5) + 73);
+		height = Int16((rand() % 5) + 73);
 	else if (race == "Human")
-		height = ((rand() % 20) + 58);
+		height = Int16((rand() % 20) + 58);
 	else if (race == "Dragonborn")
-		height = ((rand() % 16) + 66);
+		height = Int16((rand() % 16) + 66);
 	else if (race == "Drow")
-		height = ((rand() % 8) + 64);
+		height = Int16((rand() % 8) + 64);
 	else if (race == "Dwarf")
-		height = ((rand() % 8) + 45);
+		height = Int16((rand() % 8) + 45);
 	else if (race == "Eladrin")
-		height = ((rand() % 8) + 65);
+		height = Int16((rand() % 8) + 65);
 	else if (race == "Elf")
-		height = ((rand() % 12) + 53);
+		height = Int16((rand() % 12) + 53);
 	else if (race == "Gnome")
-		height = ((rand() % 6) + 36);
+		height = Int16((rand() % 6) + 36);
 	else if (race == "Half-elf")
-		height = ((rand() % 16) + 62);
+		height = Int16((rand() % 16) + 62);
 	else if (race == "Half-orc")
-		height = ((rand() % 24) + 58);
+		height = Int16((rand() % 24) + 58);
 	else if (race == "Halfling")
-		height = ((rand() % 8) + 32);
+		height = Int16((rand() % 8) + 32);
 	else if (race == "Tiefling")
-		height = ((rand() % 20) + 58);
+		height = Int16((rand() % 20) + 58);
 	else if (race == "Githzerai")
-		height = ((rand() % 12) + 66);
+		height = Int16((rand() % 12) + 66);
 	else if (race == "Goliath")
-		height = ((rand() % 12) + 84);
+		height = Int16((rand() % 12) + 84);
 	else if (race == "Minotaur")
-		height = ((rand() % 20) + 74);
+		height = Int16((rand() % 20) + 74);
 	else if (race == "Shardmind")
-		height = ((rand() % 8) + 65);
+		height = Int16((rand() % 8) + 65);
 	else if (race == "Shifter")
-		height = ((rand() % 8) + 65);
+		height = Int16((rand() % 8) + 65);
 	else if (race == "Wilden")
-		height = ((rand() % 8) + 64);
+		height = Int16((rand() % 8) + 64);
 	else
-		height = ((rand() % 12) + 0);
+		height = Int16((rand() % 12) + 0);
 }
 
 void Character::randomAge()
 {
-	age = ((rand() % 50) + 20);
+	age = Int16((rand() % 50) + 20);
 }
 
 String^ Character::getFirstName() { return firstName; }
@@ -137,8 +137,8 @@ void Character::setHairColour(String^ hairColour) { this->hairColour = hairColou
 String^ Character::getRace() { return race; }
 void Character::setRace(String^ race) { this->race = race; }
 
-int Character::getHeight() { return height; }
-void Character::setHeight(int height) { this->height = height; }
+Int16^ Character::getHeight() { return height; }
+void Character::setHeight(Int16^ height) { this->height = height; }
 
-int Character::getAge() { return age; }
-void Character::setAge(int age) { this->age = age; }
+Int16^ Character::getAge() { return age; }
+void Character::setAge(Int16^ age) { this->age = age; }
