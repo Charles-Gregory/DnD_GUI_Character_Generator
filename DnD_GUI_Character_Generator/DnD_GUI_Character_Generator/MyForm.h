@@ -14,6 +14,10 @@ namespace DnD_GUI_Character_Generator {
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
+
+		Character newCharacter;
+
+
 	public:
 		MyForm(void)
 		{
@@ -37,8 +41,6 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::Label^  Heading;
 	private: System::Windows::Forms::Label^  additionalOptionsLabel;
 
-
-
 	private: System::Windows::Forms::CheckBox^  raceCheckBox;
 	private: System::Windows::Forms::ComboBox^  raceComboBox;
 	private: System::Windows::Forms::CheckBox^  firstNameCheckBox;
@@ -61,26 +63,6 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::TextBox^  heightTextBoxOutput;
 	private: System::Windows::Forms::TextBox^  ageTextBoxOutput;
 	private: System::Windows::Forms::Button^  randomiseButton;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	protected:
-
-	protected:
 
 	private:
 		/// <summary>

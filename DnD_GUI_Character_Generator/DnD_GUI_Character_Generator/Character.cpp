@@ -1,6 +1,4 @@
-#include <fstream>
-#include <string>
-#include <vector>
+//#include <fstream>
 #include "Character.h"
 
 Character::Character()
@@ -125,17 +123,17 @@ void Character::randomAge()
 	age = ((rand() % 50) + 20);
 }
 
-string Character::getFirstName() { return firstName; }
-void Character::setFirstName(string firstName) { this->firstName = firstName; }
+std::string Character::getFirstName() { return firstName; }
+void Character::setFirstName(std::string firstName) { this->firstName = firstName; }
 
-string Character::getLastName() { return lastName; }
-void Character::setLastName(string lastName) { this->lastName = lastName; }
+std::string Character::getLastName() { return lastName; }
+void Character::setLastName(std::string lastName) { this->lastName = lastName; }
 
-string Character::getHairColour() { return hairColour; }
-void Character::setHairColour(string hairColour) { this->hairColour = hairColour; }
+std::string Character::getHairColour() { return hairColour; }
+void Character::setHairColour(std::string hairColour) { this->hairColour = hairColour; }
 
-string Character::getRace() { return race; }
-void Character::setRace(string race) { this->race = race; }
+std::string Character::getRace() { return race; }
+void Character::setRace(std::string race) { this->race = race; }
 
 int Character::getHeight() { return height; }
 void Character::setHeight(int height) { this->height = height; }

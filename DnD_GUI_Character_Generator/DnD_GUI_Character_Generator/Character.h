@@ -1,23 +1,24 @@
+#pragma once
+
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include <string>
 #include <vector>
 
-using namespace std;
+using namespace System;
 
 class Character
 {
 private:
-	string firstName;
-	string middleName;
-	string lastName;
-	string hairColour;
-	string race;
+	std::string firstName;
+	std::string middleName;
+	std::string lastName;
+	std::string hairColour;
+	std::string race;
 	int height;
 	int age;
 
-	vector<vector<string>> firstNames = {
+	std::vector<std::vector<std::string>> firstNames = {
 		//Deva [0]
 		//Male
 		{ "Manihn", "Zayek", "Ader", "Samahk", "Maneb", "Beras", "Eryal", "Gamar", "Tavin", "Nahem",
@@ -51,7 +52,7 @@ private:
 		//
 	};
 
-	vector<vector<string>> lastNames = {
+	std::vector<std::vector<std::string>> lastNames = {
 		//Deva [0]
 		{ "Ebed", "Kerehr", "Ayahk", "Savahn", "Erek", "Elyihn", "Rahin", "Kerech", "Serahm", "Iannes", "Idranael", "Sadaraeh", "Anehl", "Nalahne", "Jenehl", "Hanima", "Isima", "Nomek", "Haneya", "Asha" },
 
@@ -68,9 +69,9 @@ private:
 		{ "Vonmond", "Thormyl", "Gremnum", "Ebkyl", "Hjoldur", "Hjulkohm", "Gimdahr", "Barkum", "Brumdahr", "Therdrak", "Kathsael", "Bellewin", "Einmura", "Brilri", "Barglian", "Tislen", "Rynnar", "Dearthel", "Nesmera", "Misleen" }
 	};
 
-	vector<string> hairColours = { "Black", "Brunette", "Dark brown", "Medium brown", "Light brown", "Chestnut brown", "Light chestnut brown", "Auburn", "Copper", "Red", "Titian", "Strawberry blond", "Light blond", "Dark blond", "Medium blond", "Grey", "White", "Red", "Blue", "Yellow", "Green" };
+	std::vector<std::string> hairColours = { "Black", "Brunette", "Dark brown", "Medium brown", "Light brown", "Chestnut brown", "Light chestnut brown", "Auburn", "Copper", "Red", "Titian", "Strawberry blond", "Light blond", "Dark blond", "Medium blond", "Grey", "White", "Red", "Blue", "Yellow", "Green" };
 
-	vector<string> races = { "Deva", "Human", "Dragonborn", "Drow", "Dwarf", "Eladrin", "Elf", "Gnome", "Half-elf", "Half-orc", "Halfling", "Tiefling", "Githzerai", "Goliath", "Minotaur", "Shardmind", "Shifter", "Wilden" };
+	std::vector<std::string> races = { "Deva", "Human", "Dragonborn", "Drow", "Dwarf", "Eladrin", "Elf", "Gnome", "Half-elf", "Half-orc", "Halfling", "Tiefling", "Githzerai", "Goliath", "Minotaur", "Shardmind", "Shifter", "Wilden" };
 
 	void randomFirstName();
 	void randomLastName();
@@ -85,17 +86,17 @@ public:
 
 	void randomise();
 
-	string getFirstName();
-	void setFirstName(string firstName);
+	std::string getFirstName();
+	void setFirstName(std::string firstName);
 
-	string getLastName();
-	void setLastName(string lastName);
+	std::string getLastName();
+	void setLastName(std::string lastName);
 
-	string getHairColour();
-	void setHairColour(string hairColour);
+	std::string getHairColour();
+	void setHairColour(std::string hairColour);
 
-	string getRace();
-	void setRace(string race);
+	std::string getRace();
+	void setRace(std::string race);
 
 	int getHeight();
 	void setHeight(int height);
