@@ -3,12 +3,12 @@
 #include <vector>
 #include "Character.h"
 
-Character::Character()
-{
-	randomise();
-}
+//Character::Character()
+//{
+//	randomise();
+//}
 
-Character::~Character() {}
+//Character::~Character() {}
 
 void Character::randomise()
 {
@@ -23,19 +23,19 @@ void Character::randomise()
 void Character::randomFirstName()
 {
 	if (race == "Deva")
-		firstName = firstNames[0][(rand() % firstNames[0].size())];
+		firstName = firstNames[0][(rand() % firstNames[0]->Length)];
 	else if (race == "Human")
-		firstName = firstNames[1][(rand() % firstNames[1].size())];
+		firstName = firstNames[1][(rand() % firstNames[1]->Length)];
 	else if (race == "Dragonborn")
-		firstName = firstNames[2][(rand() % firstNames[2].size())];
+		firstName = firstNames[2][(rand() % firstNames[2]->Length)];
 	else if (race == "Drow")
-		firstName = firstNames[3][(rand() % firstNames[3].size())];
+		firstName = firstNames[3][(rand() % firstNames[3]->Length)];
 	else if (race == "Dwarf")
-		firstName = firstNames[4][(rand() % firstNames[4].size())];
+		firstName = firstNames[4][(rand() % firstNames[4]->Length)];
 	else
 	{
-		int i = (rand() % firstNames.size());
-		firstName = firstNames[i][(rand() % firstNames[i].size())];
+		int i = (rand() % firstNames->Length);
+		firstName = firstNames[i][(rand() % firstNames[i]->Length)];
 	}
 }
 
@@ -43,39 +43,39 @@ void Character::randomLastName()
 {
 	if (race == "Deva")
 	{
-		lastName = lastNames[0][(rand() % lastNames[0].size())];
+		lastName = lastNames[0][(rand() % lastNames[0]->Length)];
 	}
 	else if (race == "Human")
 	{
-		lastName = lastNames[1][(rand() % lastNames[1].size())];
+		lastName = lastNames[1][(rand() % lastNames[1]->Length)];
 	}
 	else if (race == "Dragonborn")
 	{
-		lastName = lastNames[2][(rand() % lastNames[2].size())];
+		lastName = lastNames[2][(rand() % lastNames[2]->Length)];
 	}
 	else if (race == "Drow")
 	{
-		lastName = lastNames[3][(rand() % lastNames[3].size())];
+		lastName = lastNames[3][(rand() % lastNames[3]->Length)];
 	}
 	else if (race == "Dwarf")
 	{
-		lastName = lastNames[4][(rand() % lastNames[4].size())];
+		lastName = lastNames[4][(rand() % lastNames[4]->Length)];
 	}
 	else
 	{
-		int i = (rand() % lastNames.size());
-		lastName = lastNames[i][(rand() % lastNames[i].size())];
+		int i = (rand() % lastNames->Length);
+		lastName = lastNames[i][(rand() % lastNames[i]->Length)];
 	}
 }
 
 void Character::randomHairColour()
 {
-	hairColour = hairColours[(rand() % hairColours.size())];
+	hairColour = hairColours[(rand() % hairColours->Length)];
 }
 
 void Character::randomRace()
 {
-	race = races[(rand() % races.size())];
+	race = races[(rand() % races->Length)];
 }
 
 void Character::randomHeight()
@@ -125,17 +125,17 @@ void Character::randomAge()
 	age = ((rand() % 50) + 20);
 }
 
-string Character::getFirstName() { return firstName; }
-void Character::setFirstName(string firstName) { this->firstName = firstName; }
+String^ Character::getFirstName() { return firstName; }
+void Character::setFirstName(String^ firstName) { this->firstName = firstName; }
 
-string Character::getLastName() { return lastName; }
-void Character::setLastName(string lastName) { this->lastName = lastName; }
+String^ Character::getLastName() { return lastName; }
+void Character::setLastName(String^ lastName) { this->lastName = lastName; }
 
-string Character::getHairColour() { return hairColour; }
-void Character::setHairColour(string hairColour) { this->hairColour = hairColour; }
+String^ Character::getHairColour() { return hairColour; }
+void Character::setHairColour(String^ hairColour) { this->hairColour = hairColour; }
 
-string Character::getRace() { return race; }
-void Character::setRace(string race) { this->race = race; }
+String^ Character::getRace() { return race; }
+void Character::setRace(String^ race) { this->race = race; }
 
 int Character::getHeight() { return height; }
 void Character::setHeight(int height) { this->height = height; }

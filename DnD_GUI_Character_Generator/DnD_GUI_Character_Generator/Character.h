@@ -1,23 +1,21 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include <string>
-#include <vector>
+using namespace System;
+using namespace System::Collections::Generic;
 
-using namespace std;
-
-class Character
+public ref class Character
 {
 private:
-	string firstName;
-	string middleName;
-	string lastName;
-	string hairColour;
-	string race;
-	int height;
-	int age;
+	static String^ firstName;
+	static String^ middleName;
+	static String^ lastName;
+	static String^ hairColour;
+	static String^ race;
+	static int height;
+	static int age;
 
-	vector<vector<string>> firstNames = {
+	static array<array<String^>^>^ firstNames = gcnew array<array<String^>^> {
 		//Deva [0]
 		//Male
 		{ "Manihn", "Zayek", "Ader", "Samahk", "Maneb", "Beras", "Eryal", "Gamar", "Tavin", "Nahem",
@@ -51,7 +49,7 @@ private:
 		//
 	};
 
-	vector<vector<string>> lastNames = {
+	static array<array<String^>^>^ lastNames = gcnew array<array<String^>^> {
 		//Deva [0]
 		{ "Ebed", "Kerehr", "Ayahk", "Savahn", "Erek", "Elyihn", "Rahin", "Kerech", "Serahm", "Iannes", "Idranael", "Sadaraeh", "Anehl", "Nalahne", "Jenehl", "Hanima", "Isima", "Nomek", "Haneya", "Asha" },
 
@@ -68,40 +66,40 @@ private:
 		{ "Vonmond", "Thormyl", "Gremnum", "Ebkyl", "Hjoldur", "Hjulkohm", "Gimdahr", "Barkum", "Brumdahr", "Therdrak", "Kathsael", "Bellewin", "Einmura", "Brilri", "Barglian", "Tislen", "Rynnar", "Dearthel", "Nesmera", "Misleen" }
 	};
 
-	vector<string> hairColours = { "Black", "Brunette", "Dark brown", "Medium brown", "Light brown", "Chestnut brown", "Light chestnut brown", "Auburn", "Copper", "Red", "Titian", "Strawberry blond", "Light blond", "Dark blond", "Medium blond", "Grey", "White", "Red", "Blue", "Yellow", "Green" };
+	static array<String^>^ hairColours = gcnew array<String^> { "Black", "Brunette", "Dark brown", "Medium brown", "Light brown", "Chestnut brown", "Light chestnut brown", "Auburn", "Copper", "Red", "Titian", "Strawberry blond", "Light blond", "Dark blond", "Medium blond", "Grey", "White", "Red", "Blue", "Yellow", "Green" };
 
-	vector<string> races = { "Deva", "Human", "Dragonborn", "Drow", "Dwarf", "Eladrin", "Elf", "Gnome", "Half-elf", "Half-orc", "Halfling", "Tiefling", "Githzerai", "Goliath", "Minotaur", "Shardmind", "Shifter", "Wilden" };
+	static array<String^>^ races = gcnew array<String^>{ "Deva", "Human", "Dragonborn", "Drow", "Dwarf", "Eladrin", "Elf", "Gnome", "Half-elf", "Half-orc", "Halfling", "Tiefling", "Githzerai", "Goliath", "Minotaur", "Shardmind", "Shifter", "Wilden" };
 
-	void randomFirstName();
-	void randomLastName();
-	void randomHairColour();
-	void randomRace();
-	void randomHeight();
-	void randomAge();
+	static void randomFirstName();
+	static void randomLastName();
+	static void randomHairColour();
+	static void randomRace();
+	static void randomHeight();
+	static void randomAge();
 
 public:
-	Character();
-	~Character();
+	//Character();
+	//~Character();
 
-	void randomise();
+	static void randomise();
 
-	string getFirstName();
-	void setFirstName(string firstName);
+	static String^ getFirstName();
+	static void setFirstName(String^ firstName);
 
-	string getLastName();
-	void setLastName(string lastName);
+	static String^ getLastName();
+	static void setLastName(String^ lastName);
 
-	string getHairColour();
-	void setHairColour(string hairColour);
+	static String^ getHairColour();
+	static void setHairColour(String^ hairColour);
 
-	string getRace();
-	void setRace(string race);
+	static String^ getRace();
+	static void setRace(String^ race);
 
-	int getHeight();
-	void setHeight(int height);
+	static int getHeight();
+	static void setHeight(int height);
 
-	int getAge();
-	void setAge(int age);
+	static int getAge();
+	static void setAge(int age);
 };
 
 #endif

@@ -37,8 +37,6 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::Label^  Heading;
 	private: System::Windows::Forms::Label^  additionalOptionsLabel;
 
-
-
 	private: System::Windows::Forms::CheckBox^  raceCheckBox;
 	private: System::Windows::Forms::ComboBox^  raceComboBox;
 	private: System::Windows::Forms::CheckBox^  firstNameCheckBox;
@@ -61,26 +59,11 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::TextBox^  heightTextBoxOutput;
 	private: System::Windows::Forms::TextBox^  ageTextBoxOutput;
 	private: System::Windows::Forms::Button^  randomiseButton;
+	private: Character^ newCharacter;
 
+	//protected:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	protected:
-
-	protected:
+	//protected:
 
 	private:
 		/// <summary>
@@ -121,75 +104,45 @@ namespace DnD_GUI_Character_Generator {
 			this->ageTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
 			this->randomiseButton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
-			// 
-			// Heading
-			// 
 			resources->ApplyResources(this->Heading, L"Heading");
 			this->Heading->Name = L"Heading";
 			this->Heading->Click += gcnew System::EventHandler(this, &MyForm::label1_Click);
-			// 
-			// additionalOptionsLabel
-			// 
 			resources->ApplyResources(this->additionalOptionsLabel, L"additionalOptionsLabel");
 			this->additionalOptionsLabel->Name = L"additionalOptionsLabel";
 			this->additionalOptionsLabel->Click += gcnew System::EventHandler(this, &MyForm::ComboBoxLabel1_Click);
-			// 
-			// raceCheckBox
-			// 
 			resources->ApplyResources(this->raceCheckBox, L"raceCheckBox");
 			this->raceCheckBox->Name = L"raceCheckBox";
 			this->raceCheckBox->UseVisualStyleBackColor = true;
 			this->raceCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::raceCheckBox_OnCheckedChanged);
-			// 
-			// raceComboBox
-			// 
 			this->raceComboBox->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			resources->ApplyResources(this->raceComboBox, L"raceComboBox");
 			this->raceComboBox->FormattingEnabled = true;
 			this->raceComboBox->Items->AddRange(gcnew cli::array< System::Object^  >(18) {
-				resources->GetString(L"raceComboBox.Items"),
-					resources->GetString(L"raceComboBox.Items1"), resources->GetString(L"raceComboBox.Items2"), resources->GetString(L"raceComboBox.Items3"),
-					resources->GetString(L"raceComboBox.Items4"), resources->GetString(L"raceComboBox.Items5"), resources->GetString(L"raceComboBox.Items6"),
-					resources->GetString(L"raceComboBox.Items7"), resources->GetString(L"raceComboBox.Items8"), resources->GetString(L"raceComboBox.Items9"),
-					resources->GetString(L"raceComboBox.Items10"), resources->GetString(L"raceComboBox.Items11"), resources->GetString(L"raceComboBox.Items12"),
-					resources->GetString(L"raceComboBox.Items13"), resources->GetString(L"raceComboBox.Items14"), resources->GetString(L"raceComboBox.Items15"),
-					resources->GetString(L"raceComboBox.Items16"), resources->GetString(L"raceComboBox.Items17")
+				resources->GetString(L"raceComboBox.Items"), resources->GetString(L"raceComboBox.Items1"),
+					resources->GetString(L"raceComboBox.Items2"), resources->GetString(L"raceComboBox.Items3"), resources->GetString(L"raceComboBox.Items4"),
+					resources->GetString(L"raceComboBox.Items5"), resources->GetString(L"raceComboBox.Items6"), resources->GetString(L"raceComboBox.Items7"),
+					resources->GetString(L"raceComboBox.Items8"), resources->GetString(L"raceComboBox.Items9"), resources->GetString(L"raceComboBox.Items10"),
+					resources->GetString(L"raceComboBox.Items11"), resources->GetString(L"raceComboBox.Items12"), resources->GetString(L"raceComboBox.Items13"),
+					resources->GetString(L"raceComboBox.Items14"), resources->GetString(L"raceComboBox.Items15"), resources->GetString(L"raceComboBox.Items16"),
+					resources->GetString(L"raceComboBox.Items17")
 			});
 			this->raceComboBox->Name = L"raceComboBox";
-			// 
-			// firstNameCheckBox
-			// 
 			resources->ApplyResources(this->firstNameCheckBox, L"firstNameCheckBox");
 			this->firstNameCheckBox->Name = L"firstNameCheckBox";
 			this->firstNameCheckBox->UseVisualStyleBackColor = true;
 			this->firstNameCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::firstNameCheckBox_CheckedChanged);
-			// 
-			// firstNameTextBox
-			// 
 			resources->ApplyResources(this->firstNameTextBox, L"firstNameTextBox");
 			this->firstNameTextBox->Name = L"firstNameTextBox";
-			// 
-			// lastNameCheckBox
-			// 
 			resources->ApplyResources(this->lastNameCheckBox, L"lastNameCheckBox");
 			this->lastNameCheckBox->Name = L"lastNameCheckBox";
 			this->lastNameCheckBox->UseVisualStyleBackColor = true;
 			this->lastNameCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::checkBox1_CheckedChanged);
-			// 
-			// lastNameTextBox
-			// 
 			resources->ApplyResources(this->lastNameTextBox, L"lastNameTextBox");
 			this->lastNameTextBox->Name = L"lastNameTextBox";
-			// 
-			// hairColourCheckBox
-			// 
 			resources->ApplyResources(this->hairColourCheckBox, L"hairColourCheckBox");
 			this->hairColourCheckBox->Name = L"hairColourCheckBox";
 			this->hairColourCheckBox->UseVisualStyleBackColor = true;
 			this->hairColourCheckBox->CheckedChanged += gcnew System::EventHandler(this, &MyForm::hairColourCheckBox_CheckedChanged);
-			// 
-			// hairColourComboBox
-			// 
 			this->hairColourComboBox->DropDownStyle = System::Windows::Forms::ComboBoxStyle::DropDownList;
 			resources->ApplyResources(this->hairColourComboBox, L"hairColourComboBox");
 			this->hairColourComboBox->FormattingEnabled = true;
@@ -204,87 +157,42 @@ namespace DnD_GUI_Character_Generator {
 					resources->GetString(L"hairColourComboBox.Items19"), resources->GetString(L"hairColourComboBox.Items20")
 			});
 			this->hairColourComboBox->Name = L"hairColourComboBox";
-			// 
-			// characterLabel
-			// 
 			resources->ApplyResources(this->characterLabel, L"characterLabel");
 			this->characterLabel->Name = L"characterLabel";
-			// 
-			// firstNameLabel
-			// 
 			resources->ApplyResources(this->firstNameLabel, L"firstNameLabel");
 			this->firstNameLabel->Name = L"firstNameLabel";
-			// 
-			// lastNameLabel
-			// 
 			resources->ApplyResources(this->lastNameLabel, L"lastNameLabel");
 			this->lastNameLabel->Name = L"lastNameLabel";
-			// 
-			// hairColourLabel
-			// 
 			resources->ApplyResources(this->hairColourLabel, L"hairColourLabel");
 			this->hairColourLabel->Name = L"hairColourLabel";
-			// 
-			// raceLabel
-			// 
 			resources->ApplyResources(this->raceLabel, L"raceLabel");
 			this->raceLabel->Name = L"raceLabel";
-			// 
-			// heightLabel
-			// 
 			resources->ApplyResources(this->heightLabel, L"heightLabel");
 			this->heightLabel->Name = L"heightLabel";
-			// 
-			// ageLabel
-			// 
 			resources->ApplyResources(this->ageLabel, L"ageLabel");
 			this->ageLabel->Name = L"ageLabel";
-			// 
-			// firstNameTextBoxOutput
-			// 
 			resources->ApplyResources(this->firstNameTextBoxOutput, L"firstNameTextBoxOutput");
 			this->firstNameTextBoxOutput->Name = L"firstNameTextBoxOutput";
 			this->firstNameTextBoxOutput->ReadOnly = true;
-			// 
-			// lastNameTextBoxOutput
-			// 
 			resources->ApplyResources(this->lastNameTextBoxOutput, L"lastNameTextBoxOutput");
 			this->lastNameTextBoxOutput->Name = L"lastNameTextBoxOutput";
 			this->lastNameTextBoxOutput->ReadOnly = true;
-			// 
-			// hairColourTextBoxOutput
-			// 
 			resources->ApplyResources(this->hairColourTextBoxOutput, L"hairColourTextBoxOutput");
 			this->hairColourTextBoxOutput->Name = L"hairColourTextBoxOutput";
 			this->hairColourTextBoxOutput->ReadOnly = true;
-			// 
-			// raceTextBoxOutput
-			// 
 			resources->ApplyResources(this->raceTextBoxOutput, L"raceTextBoxOutput");
 			this->raceTextBoxOutput->Name = L"raceTextBoxOutput";
 			this->raceTextBoxOutput->ReadOnly = true;
-			// 
-			// heightTextBoxOutput
-			// 
 			resources->ApplyResources(this->heightTextBoxOutput, L"heightTextBoxOutput");
 			this->heightTextBoxOutput->Name = L"heightTextBoxOutput";
 			this->heightTextBoxOutput->ReadOnly = true;
-			// 
-			// ageTextBoxOutput
-			// 
 			resources->ApplyResources(this->ageTextBoxOutput, L"ageTextBoxOutput");
 			this->ageTextBoxOutput->Name = L"ageTextBoxOutput";
 			this->ageTextBoxOutput->ReadOnly = true;
-			// 
-			// randomiseButton
-			// 
 			resources->ApplyResources(this->randomiseButton, L"randomiseButton");
 			this->randomiseButton->Name = L"randomiseButton";
 			this->randomiseButton->UseVisualStyleBackColor = true;
 			this->randomiseButton->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
-			// 
-			// MyForm
-			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->Controls->Add(this->randomiseButton);
