@@ -95,7 +95,7 @@ public:
 	static String^ getRace();
 	void setRace(String^ race);
 
-	static Int16^ getHeight();
+	Int16^ getHeight();
 	void setHeight(Int16^ height);
 
 	static Int16^ getAge();

@@ -278,7 +278,7 @@ namespace DnD_GUI_Character_Generator {
 		//Assign race
 		this->raceTextBoxOutput->Text = this->newCharacter->getRace();
 		//Assign height
-		this->heightTextBoxOutput->Text = Convert::ToString(this->newCharacter->getHeight());
+		this->heightTextBoxOutput->Text = Convert::ToString((Convert::ToInt16(this->newCharacter->getHeight()) / 12) + "\' " + (Convert::ToInt16(this->newCharacter->getHeight()) % 12) + "\"");
 		//Assign age
 		this->ageTextBoxOutput->Text = Convert::ToString(this->newCharacter->getAge());
 	}
