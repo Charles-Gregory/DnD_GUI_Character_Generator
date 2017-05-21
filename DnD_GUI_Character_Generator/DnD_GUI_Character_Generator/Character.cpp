@@ -150,7 +150,14 @@ void Character::randomHeight()
 
 void Character::randomAge()
 {
-	age = Int16((rand() % 50) + 20);
+	if (((rand() % 10) + 1) > 2)
+	{
+		age = Int16((rand() % 20) + 20);
+	}
+	else
+	{
+		age = Int16((rand() % 30) + 40);
+	}
 }
 
 String^ Character::getFirstName() { return firstName; }
