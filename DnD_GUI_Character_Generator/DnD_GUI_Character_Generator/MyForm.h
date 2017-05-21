@@ -267,16 +267,51 @@ namespace DnD_GUI_Character_Generator {
 		}
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-		//Randomise all character traits
+		//Check wihich additional options have been selected
+		Boolean firstName = false;
+		Boolean lastName = false;
+		Boolean hairColour = false;
+		Boolean race = false;
+
+		//Manually enter first name
+		if (this->firstNameCheckBox->Checked == true) {
+			firstName = true;
+			this->firstNameTextBoxOutput->Text = this->firstNameTextBox->Text;
+		}
+		//Manually enter last name
+		if (this->lastNameCheckBox->Checked == true) {
+			lastName = true;
+			this->lastNameTextBoxOutput->Text = this->lastNameTextBox->Text;
+		}
+		//Manually enter hair colour
+		if (this->hairColourCheckBox->Checked == true) {
+			hairColour = true;
+			this->hairColourTextBoxOutput->Text = this->hairColourComboBox->Text;
+		}
+		//Manually enter race
+		if (this->raceCheckBox->Checked == true) {
+			race = true;
+			this->raceTextBoxOutput->Text = this->raceComboBox->Text;
+		}
+
+		//Randomise all character traits but only assign those that have not been manually entered
 		this->newCharacter->randomise();
 		//Assign first name
-		this->firstNameTextBoxOutput->Text = this->newCharacter->getFirstName();
+		if (firstName == false) {
+			this->firstNameTextBoxOutput->Text = this->newCharacter->getFirstName();
+		}
 		//Assign last name
-		this->lastNameTextBoxOutput->Text = this->newCharacter->getLastName();
+		if (lastName == false) {
+			this->lastNameTextBoxOutput->Text = this->newCharacter->getLastName();
+		}
 		//Assign hair colour
-		this->hairColourTextBoxOutput->Text = this->newCharacter->getHairColour();
+		if (hairColour == false) {
+			this->hairColourTextBoxOutput->Text = this->newCharacter->getHairColour();
+		}
 		//Assign race
-		this->raceTextBoxOutput->Text = this->newCharacter->getRace();
+		if (race == false) {
+			this->raceTextBoxOutput->Text = this->newCharacter->getRace();
+		}
 		//Assign height
 		this->heightTextBoxOutput->Text = Convert::ToString((Convert::ToInt16(this->newCharacter->getHeight()) / 12) + "\' " + (Convert::ToInt16(this->newCharacter->getHeight()) % 12) + "\"");
 		//Assign age
