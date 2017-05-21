@@ -66,7 +66,7 @@ private:
 		{ "Vonmond", "Thormyl", "Gremnum", "Ebkyl", "Hjoldur", "Hjulkohm", "Gimdahr", "Barkum", "Brumdahr", "Therdrak", "Kathsael", "Bellewin", "Einmura", "Brilri", "Barglian", "Tislen", "Rynnar", "Dearthel", "Nesmera", "Misleen" }
 	};
 
-	static array<String^>^ hairColours = gcnew array<String^> { "Black", "Brunette", "Dark brown", "Medium brown", "Light brown", "Chestnut brown", "Light chestnut brown", "Auburn", "Copper", "Red", "Titian", "Strawberry blond", "Light blond", "Dark blond", "Medium blond", "Grey", "White", "Red", "Blue", "Yellow", "Green" };
+	static array<String^>^ hairColours = gcnew array<String^> { "Black", "Brunette", "Dark brown", "Medium brown", "Light brown", "Chestnut brown", "Light chestnut brown", "Auburn", "Copper", "Red", "Titian", "Strawberry blond", "Light blonde", "Dark blonde", "Medium blonde", "Grey", "White", "Red", "Blue", "Yellow", "Green" };
 
 	static array<String^>^ races = gcnew array<String^>{ "Deva", "Human", "Dragonborn", "Drow", "Dwarf", "Eladrin", "Elf", "Gnome", "Half-elf", "Half-orc", "Halfling", "Tiefling", "Githzerai", "Goliath", "Minotaur", "Shardmind", "Shifter", "Wilden" };
 
