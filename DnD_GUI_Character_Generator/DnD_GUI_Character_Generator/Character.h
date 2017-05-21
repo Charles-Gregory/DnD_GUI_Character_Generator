@@ -82,6 +82,7 @@ public:
 	//~Character();
 
 	static void randomise();
+	static void customRandomise(Boolean isFirstName, Boolean isLastName, Boolean isHairColour, Boolean isRace);
 
 	static String^ getFirstName();
 	void setFirstName(String^ firstName);
@@ -101,5 +102,4 @@ public:
 	static Int16^ getAge();
 	void setAge(Int16^ age);
 };
-
 #endif

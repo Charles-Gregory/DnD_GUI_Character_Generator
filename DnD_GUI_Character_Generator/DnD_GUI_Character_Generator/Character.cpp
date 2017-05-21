@@ -20,6 +20,34 @@ void Character::randomise()
 	randomLastName();
 }
 
+void Character::customRandomise(Boolean isFirstName, Boolean isLastName, Boolean isHairColour, Boolean isRace)
+{
+	//Hair colour is not being manually entered
+	if (isHairColour == false)
+	{
+		randomHairColour();
+	}
+	//Randomise age
+	randomAge();
+	//Race is not being manually entered
+	if (isRace == false)
+	{
+		randomRace();
+	}
+	//Randomise height
+	randomHeight();
+	//First name is not being manually entered
+	if (isFirstName == false)
+	{
+		randomFirstName();
+	}
+	//Last name is not being manually entered
+	if (isLastName == false)
+	{
+		randomLastName();
+	}
+}
+
 void Character::randomFirstName()
 {
 	if (race == "Deva")
