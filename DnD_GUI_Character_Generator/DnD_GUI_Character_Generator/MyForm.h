@@ -268,6 +268,8 @@ namespace DnD_GUI_Character_Generator {
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->lastNameTextBox);
+			this->Controls->Add(this->firstNameTextBox);
 			this->Controls->Add(this->randomiseButton);
 			this->Controls->Add(this->ageTextBoxOutput);
 			this->Controls->Add(this->heightTextBoxOutput);
@@ -284,9 +286,7 @@ namespace DnD_GUI_Character_Generator {
 			this->Controls->Add(this->characterLabel);
 			this->Controls->Add(this->hairColourComboBox);
 			this->Controls->Add(this->hairColourCheckBox);
-			this->Controls->Add(this->lastNameTextBox);
 			this->Controls->Add(this->lastNameCheckBox);
-			this->Controls->Add(this->firstNameTextBox);
 			this->Controls->Add(this->firstNameCheckBox);
 			this->Controls->Add(this->raceComboBox);
 			this->Controls->Add(this->raceCheckBox);
@@ -319,17 +319,21 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Void firstNameCheckBox_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		if (this->firstNameCheckBox->Checked == true) {
 			this->firstNameTextBox->Enabled = true;
+			this->firstNameTextBox->Visible = true;
 		}
 		else {
 			this->firstNameTextBox->Enabled = false;
+			this->firstNameTextBox->Visible = false;
 		}
 	}
 	private: System::Void checkBox1_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		if (this->lastNameCheckBox->Checked == true) {
 			this->lastNameTextBox->Enabled = true;
+			this->lastNameTextBox->Visible = true;
 		}
 		else {
 			this->lastNameTextBox->Enabled = false;
+			this->lastNameTextBox->Visible = false;
 		}
 	}
 	private: System::Void hairColourCheckBox_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {

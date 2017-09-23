@@ -10,6 +10,8 @@
 
 //Character::~Character() {}
 
+//Traits
+
 void Character::randomise()
 {
 	randomHairColour();
@@ -177,3 +179,77 @@ void Character::setHeight(Int16^ height) { this->height = height; }
 
 Int16^ Character::getAge() { return age; }
 void Character::setAge(Int16^ age) { this->age = age; }
+
+//Abilities     ######################
+
+void Character::randomAbility()
+{
+
+}
+
+void Character::randomStrength()
+{
+	for (int i = 0; i < 3; ++i)
+	{
+		rollNumbers[i] = Int16(rand() % 6);
+	}
+	Array::Sort(rollNumbers);
+	Int16(strength) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+}
+
+void Character::randomDexterity()
+{
+	for (int i = 0; i < 3; ++i)
+	{
+		rollNumbers[i] = Int16(rand() % 6);
+	}
+	Array::Sort(rollNumbers);
+	Int16(dexterity) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+}
+
+void Character::randomConstitution()
+{
+	for (int i = 0; i < 3; ++i)
+	{
+		rollNumbers[i] = Int16(rand() % 6);
+	}
+	Array::Sort(rollNumbers);
+	Int16(constitution) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+}
+
+void Character::randomIntelligence()
+{
+	for (int i = 0; i < 3; ++i)
+	{
+		rollNumbers[i] = Int16(rand() % 6);
+	}
+	Array::Sort(rollNumbers);
+	Int16(intelligence) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+}
+
+void Character::randomWisdom()
+{
+	for (int i = 0; i < 3; ++i)
+	{
+		rollNumbers[i] = Int16(rand() % 6);
+	}
+	Array::Sort(rollNumbers);
+	Int16(wisdom) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+}
+
+void Character::randomCharisma()
+{
+	for (int i = 0; i < 3; ++i)
+	{
+		rollNumbers[i] = Int16(rand() % 6);
+	}
+	Array::Sort(rollNumbers);
+	Int16(charisma) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+}
+
+Int16^ Character::getStrength() { return strength; }
+Int16^ Character::getDexterity() { return dexterity; }
+Int16^ Character::getConstitution() { return constitution; }
+Int16^ Character::getIntelligence() { return intelligence; }
+Int16^ Character::getWisdom() { return wisdom; }
+Int16^ Character::getCharisma() { return charisma; }

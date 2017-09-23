@@ -7,6 +7,7 @@ using namespace System::Collections::Generic;
 public ref class Character
 {
 private:
+	//Traits
 	static String^ firstName;
 	static String^ middleName;
 	static String^ lastName;
@@ -14,6 +15,17 @@ private:
 	static String^ race;
 	static Int16^ height;
 	static Int16^ age;
+
+	//Abilities
+	static Int16^ strength;
+	static Int16^ dexterity;
+	static Int16^ constitution;
+	static Int16^ intelligence;
+	static Int16^ wisdom;
+	static Int16^ charisma;
+	static array<Int16^>^ rollNumbers = gcnew array<Int16^> {
+		Int16(0), Int16(0), Int16(0), Int16(0)
+	};
 
 	static array<array<String^>^>^ firstNames = gcnew array<array<String^>^> {
 		//Deva [0]
@@ -81,6 +93,9 @@ public:
 	//Character();
 	//~Character();
 
+
+	//Traits
+
 	static void randomise();
 	static void customRandomise(Boolean isFirstName, Boolean isLastName, Boolean isHairColour, Boolean isRace);
 
@@ -101,5 +116,22 @@ public:
 
 	static Int16^ getAge();
 	void setAge(Int16^ age);
+
+	//Abilities
+
+	static void randomAbility();
+	static void randomStrength();
+	static void randomDexterity();
+	static void randomConstitution();
+	static void randomIntelligence();
+	static void randomWisdom();
+	static void randomCharisma();
+
+	static Int16^ getStrength();
+	static Int16^ getDexterity();
+	static Int16^ getConstitution();
+	static Int16^ getIntelligence();
+	static Int16^ getWisdom();
+	static Int16^ getCharisma();
 };
 #endif
