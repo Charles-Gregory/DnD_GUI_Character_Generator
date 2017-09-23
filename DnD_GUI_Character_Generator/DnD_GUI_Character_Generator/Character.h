@@ -1,6 +1,8 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
+#include <windows.h>
+
 using namespace System;
 using namespace System::Collections::Generic;
 
@@ -17,15 +19,13 @@ private:
 	static Int16^ age;
 
 	//Abilities
-	static Int16^ strength;
-	static Int16^ dexterity;
-	static Int16^ constitution;
-	static Int16^ intelligence;
-	static Int16^ wisdom;
-	static Int16^ charisma;
-	static array<Int16^>^ rollNumbers = gcnew array<Int16^> {
-		Int16(0), Int16(0), Int16(0), Int16(0)
-	};
+	static int^ strength = 10;
+	static int^ dexterity;
+	static int^ constitution;
+	static int^ intelligence;
+	static int^ wisdom;
+	static int^ charisma;
+	static array<int^>^ rollNumbers = gcnew array<int^> (4);
 
 	static array<array<String^>^>^ firstNames = gcnew array<array<String^>^> {
 		//Deva [0]
@@ -119,7 +119,6 @@ public:
 
 	//Abilities
 
-	static void randomAbility();
 	static void randomStrength();
 	static void randomDexterity();
 	static void randomConstitution();
@@ -127,11 +126,11 @@ public:
 	static void randomWisdom();
 	static void randomCharisma();
 
-	static Int16^ getStrength();
-	static Int16^ getDexterity();
-	static Int16^ getConstitution();
-	static Int16^ getIntelligence();
-	static Int16^ getWisdom();
-	static Int16^ getCharisma();
+	static int^ getStrength();
+	static int^ getDexterity();
+	static int^ getConstitution();
+	static int^ getIntelligence();
+	static int^ getWisdom();
+	static int^ getCharisma();
 };
 #endif

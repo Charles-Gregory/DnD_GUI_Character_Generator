@@ -20,6 +20,12 @@ void Character::randomise()
 	randomHeight();
 	randomFirstName();
 	randomLastName();
+	randomStrength();
+	randomDexterity();
+	randomConstitution();
+	randomIntelligence();
+	randomWisdom();
+	randomCharisma();
 }
 
 void Character::customRandomise(Boolean isFirstName, Boolean isLastName, Boolean isHairColour, Boolean isRace)
@@ -48,6 +54,13 @@ void Character::customRandomise(Boolean isFirstName, Boolean isLastName, Boolean
 	{
 		randomLastName();
 	}
+
+	randomStrength();
+	randomDexterity();
+	randomConstitution();
+	randomIntelligence();
+	randomWisdom();
+	randomCharisma();
 }
 
 void Character::randomFirstName()
@@ -182,74 +195,69 @@ void Character::setAge(Int16^ age) { this->age = age; }
 
 //Abilities     ######################
 
-void Character::randomAbility()
-{
-
-}
-
 void Character::randomStrength()
 {
-	for (int i = 0; i < 3; ++i)
+	for (int i = 0; i < 4; ++i)
 	{
-		rollNumbers[i] = Int16(rand() % 6);
+		rollNumbers[i] = (rand() % 6) + 1;
 	}
 	Array::Sort(rollNumbers);
-	Int16(strength) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+	strength = (int)rollNumbers[1] + (int)rollNumbers[2] + (int)rollNumbers[3];
 }
 
 void Character::randomDexterity()
 {
 	for (int i = 0; i < 3; ++i)
 	{
-		rollNumbers[i] = Int16(rand() % 6);
+		rollNumbers[i] = (rand() % 6) + 1;
 	}
 	Array::Sort(rollNumbers);
-	Int16(dexterity) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+	dexterity = (int)rollNumbers[1] + (int)rollNumbers[2] + (int)rollNumbers[3];
 }
 
 void Character::randomConstitution()
 {
-	for (int i = 0; i < 3; ++i)
+	for (int i = 0; i < 4; ++i)
 	{
-		rollNumbers[i] = Int16(rand() % 6);
+		rollNumbers[i] = (rand() % 6) + 1;
 	}
 	Array::Sort(rollNumbers);
-	Int16(constitution) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+	constitution = (int)rollNumbers[1] + (int)rollNumbers[2] + (int)rollNumbers[3];
 }
 
 void Character::randomIntelligence()
 {
 	for (int i = 0; i < 3; ++i)
 	{
-		rollNumbers[i] = Int16(rand() % 6);
+		rollNumbers[i] = (rand() % 6) + 1;
 	}
 	Array::Sort(rollNumbers);
-	Int16(intelligence) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+	intelligence = (int)rollNumbers[1] + (int)rollNumbers[2] + (int)rollNumbers[3];
 }
 
 void Character::randomWisdom()
 {
 	for (int i = 0; i < 3; ++i)
 	{
-		rollNumbers[i] = Int16(rand() % 6);
+		rollNumbers[i] = (rand() % 6) + 1;
 	}
 	Array::Sort(rollNumbers);
-	Int16(wisdom) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+	wisdom = (int)rollNumbers[1] + (int)rollNumbers[2] + (int)rollNumbers[3];
 }
 
 void Character::randomCharisma()
 {
 	for (int i = 0; i < 3; ++i)
 	{
-		rollNumbers[i] = Int16(rand() % 6);
+		rollNumbers[i] = (rand() % 6) + 1;
 	}
 	Array::Sort(rollNumbers);
-	Int16(charisma) = Int16(rollNumbers[1]) + Int16(rollNumbers[2]) + Int16(rollNumbers[3]);
+	charisma = (int)rollNumbers[1] + (int)rollNumbers[2] + (int)rollNumbers[3];
 }
 
-Int16^ Character::getStrength() { return strength; }
-Int16^ Character::getDexterity() { return dexterity; }
-Int16^ Character::getConstitution() { return constitution; }
-Int16^ Character::getIntelligence() { return intelligence; }
-Int16^ Character::getWisdom() { return wisdom; }
-Int16^ Character::getCharisma() { return charisma; }
+int^ Character::getStrength() { return strength; }
+int^ Character::getDexterity() { return dexterity; }
+int^ Character::getConstitution() { return constitution; }
+int^ Character::getIntelligence() { return intelligence; }
+int^ Character::getWisdom() { return wisdom; }
+int^ Character::getCharisma() { return charisma; }

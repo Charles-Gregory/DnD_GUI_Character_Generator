@@ -47,7 +47,8 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::TextBox^  lastNameTextBox;
 	private: System::Windows::Forms::CheckBox^  hairColourCheckBox;
 	private: System::Windows::Forms::ComboBox^  hairColourComboBox;
-	private: System::Windows::Forms::Label^  characterLabel;
+	private: System::Windows::Forms::Label^  characterTraitsLabel;
+
 	private: System::Windows::Forms::Label^  firstNameLabel;
 	private: System::Windows::Forms::Label^  lastNameLabel;
 	private: System::Windows::Forms::Label^  hairColourLabel;
@@ -62,6 +63,21 @@ namespace DnD_GUI_Character_Generator {
 	private: System::Windows::Forms::TextBox^  ageTextBoxOutput;
 	private: System::Windows::Forms::Button^  randomiseButton;
 	private: Character^ newCharacter;
+	private: System::Windows::Forms::Label^  characterAbilitiesLabel;
+	private: System::Windows::Forms::Label^  strengthLabel;
+	private: System::Windows::Forms::TextBox^  strengthTextBoxOutput;
+	private: System::Windows::Forms::Label^  dexterityLabel;
+	private: System::Windows::Forms::TextBox^  dexterityTextBoxOutput;
+	private: System::Windows::Forms::Label^  constitutionLabel;
+	private: System::Windows::Forms::TextBox^  constitutionTextBoxOutput;
+	private: System::Windows::Forms::Label^  intelligenceLabel;
+	private: System::Windows::Forms::TextBox^  intelligenceeTextBoxOutput;
+	private: System::Windows::Forms::Label^  wisdomLabel;
+	private: System::Windows::Forms::TextBox^  wisdomTextBoxOutput;
+	private: System::Windows::Forms::Label^  charismaLabel;
+	private: System::Windows::Forms::TextBox^  charismaTextBoxOutput;
+
+
 
 	private:
 		/// <summary>
@@ -87,7 +103,7 @@ namespace DnD_GUI_Character_Generator {
 			this->lastNameTextBox = (gcnew System::Windows::Forms::TextBox());
 			this->hairColourCheckBox = (gcnew System::Windows::Forms::CheckBox());
 			this->hairColourComboBox = (gcnew System::Windows::Forms::ComboBox());
-			this->characterLabel = (gcnew System::Windows::Forms::Label());
+			this->characterTraitsLabel = (gcnew System::Windows::Forms::Label());
 			this->firstNameLabel = (gcnew System::Windows::Forms::Label());
 			this->lastNameLabel = (gcnew System::Windows::Forms::Label());
 			this->hairColourLabel = (gcnew System::Windows::Forms::Label());
@@ -101,6 +117,19 @@ namespace DnD_GUI_Character_Generator {
 			this->heightTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
 			this->ageTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
 			this->randomiseButton = (gcnew System::Windows::Forms::Button());
+			this->characterAbilitiesLabel = (gcnew System::Windows::Forms::Label());
+			this->strengthLabel = (gcnew System::Windows::Forms::Label());
+			this->strengthTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->dexterityLabel = (gcnew System::Windows::Forms::Label());
+			this->dexterityTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->constitutionLabel = (gcnew System::Windows::Forms::Label());
+			this->constitutionTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->intelligenceLabel = (gcnew System::Windows::Forms::Label());
+			this->intelligenceeTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->wisdomLabel = (gcnew System::Windows::Forms::Label());
+			this->wisdomTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
+			this->charismaLabel = (gcnew System::Windows::Forms::Label());
+			this->charismaTextBoxOutput = (gcnew System::Windows::Forms::TextBox());
 			this->SuspendLayout();
 			// 
 			// Heading
@@ -186,10 +215,10 @@ namespace DnD_GUI_Character_Generator {
 			});
 			this->hairColourComboBox->Name = L"hairColourComboBox";
 			// 
-			// characterLabel
+			// characterTraitsLabel
 			// 
-			resources->ApplyResources(this->characterLabel, L"characterLabel");
-			this->characterLabel->Name = L"characterLabel";
+			resources->ApplyResources(this->characterTraitsLabel, L"characterTraitsLabel");
+			this->characterTraitsLabel->Name = L"characterTraitsLabel";
 			// 
 			// firstNameLabel
 			// 
@@ -264,10 +293,94 @@ namespace DnD_GUI_Character_Generator {
 			this->randomiseButton->UseVisualStyleBackColor = true;
 			this->randomiseButton->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
+			// characterAbilitiesLabel
+			// 
+			resources->ApplyResources(this->characterAbilitiesLabel, L"characterAbilitiesLabel");
+			this->characterAbilitiesLabel->Name = L"characterAbilitiesLabel";
+			// 
+			// strengthLabel
+			// 
+			resources->ApplyResources(this->strengthLabel, L"strengthLabel");
+			this->strengthLabel->Name = L"strengthLabel";
+			// 
+			// strengthTextBoxOutput
+			// 
+			resources->ApplyResources(this->strengthTextBoxOutput, L"strengthTextBoxOutput");
+			this->strengthTextBoxOutput->Name = L"strengthTextBoxOutput";
+			this->strengthTextBoxOutput->ReadOnly = true;
+			// 
+			// dexterityLabel
+			// 
+			resources->ApplyResources(this->dexterityLabel, L"dexterityLabel");
+			this->dexterityLabel->Name = L"dexterityLabel";
+			// 
+			// dexterityTextBoxOutput
+			// 
+			resources->ApplyResources(this->dexterityTextBoxOutput, L"dexterityTextBoxOutput");
+			this->dexterityTextBoxOutput->Name = L"dexterityTextBoxOutput";
+			this->dexterityTextBoxOutput->ReadOnly = true;
+			// 
+			// constitutionLabel
+			// 
+			resources->ApplyResources(this->constitutionLabel, L"constitutionLabel");
+			this->constitutionLabel->Name = L"constitutionLabel";
+			// 
+			// constitutionTextBoxOutput
+			// 
+			resources->ApplyResources(this->constitutionTextBoxOutput, L"constitutionTextBoxOutput");
+			this->constitutionTextBoxOutput->Name = L"constitutionTextBoxOutput";
+			this->constitutionTextBoxOutput->ReadOnly = true;
+			// 
+			// intelligenceLabel
+			// 
+			resources->ApplyResources(this->intelligenceLabel, L"intelligenceLabel");
+			this->intelligenceLabel->Name = L"intelligenceLabel";
+			// 
+			// intelligenceeTextBoxOutput
+			// 
+			resources->ApplyResources(this->intelligenceeTextBoxOutput, L"intelligenceeTextBoxOutput");
+			this->intelligenceeTextBoxOutput->Name = L"intelligenceeTextBoxOutput";
+			this->intelligenceeTextBoxOutput->ReadOnly = true;
+			// 
+			// wisdomLabel
+			// 
+			resources->ApplyResources(this->wisdomLabel, L"wisdomLabel");
+			this->wisdomLabel->Name = L"wisdomLabel";
+			// 
+			// wisdomTextBoxOutput
+			// 
+			resources->ApplyResources(this->wisdomTextBoxOutput, L"wisdomTextBoxOutput");
+			this->wisdomTextBoxOutput->Name = L"wisdomTextBoxOutput";
+			this->wisdomTextBoxOutput->ReadOnly = true;
+			// 
+			// charismaLabel
+			// 
+			resources->ApplyResources(this->charismaLabel, L"charismaLabel");
+			this->charismaLabel->Name = L"charismaLabel";
+			// 
+			// charismaTextBoxOutput
+			// 
+			resources->ApplyResources(this->charismaTextBoxOutput, L"charismaTextBoxOutput");
+			this->charismaTextBoxOutput->Name = L"charismaTextBoxOutput";
+			this->charismaTextBoxOutput->ReadOnly = true;
+			// 
 			// MyForm
 			// 
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->Controls->Add(this->charismaTextBoxOutput);
+			this->Controls->Add(this->charismaLabel);
+			this->Controls->Add(this->wisdomTextBoxOutput);
+			this->Controls->Add(this->wisdomLabel);
+			this->Controls->Add(this->intelligenceeTextBoxOutput);
+			this->Controls->Add(this->intelligenceLabel);
+			this->Controls->Add(this->constitutionTextBoxOutput);
+			this->Controls->Add(this->constitutionLabel);
+			this->Controls->Add(this->dexterityTextBoxOutput);
+			this->Controls->Add(this->dexterityLabel);
+			this->Controls->Add(this->strengthTextBoxOutput);
+			this->Controls->Add(this->strengthLabel);
+			this->Controls->Add(this->characterAbilitiesLabel);
 			this->Controls->Add(this->lastNameTextBox);
 			this->Controls->Add(this->firstNameTextBox);
 			this->Controls->Add(this->randomiseButton);
@@ -283,7 +396,7 @@ namespace DnD_GUI_Character_Generator {
 			this->Controls->Add(this->hairColourLabel);
 			this->Controls->Add(this->lastNameLabel);
 			this->Controls->Add(this->firstNameLabel);
-			this->Controls->Add(this->characterLabel);
+			this->Controls->Add(this->characterTraitsLabel);
 			this->Controls->Add(this->hairColourComboBox);
 			this->Controls->Add(this->hairColourCheckBox);
 			this->Controls->Add(this->lastNameCheckBox);
@@ -346,6 +459,7 @@ namespace DnD_GUI_Character_Generator {
 		}
 	}
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
+		//Character traits
 		//Check wihich additional options have been selected
 		Boolean isFirstName = false;
 		Boolean isLastName = false;
@@ -400,6 +514,22 @@ namespace DnD_GUI_Character_Generator {
 		//this->heightTextBoxOutput->Text = Convert::ToString(this->newCharacter->getHeight());
 		//Assign age
 		this->ageTextBoxOutput->Text = Convert::ToString(this->newCharacter->getAge());
+
+		//Character abilities
+		//Randomise all character abilities
+		//Calculated by "rolling" 4 D6 and adding numbers of top three
+		//Assign strength
+		this->strengthTextBoxOutput->Text = Convert::ToString((Convert::ToInt16(this->newCharacter->getStrength())));
+		//Assign dexterity
+		this->dexterityTextBoxOutput->Text = Convert::ToString((Convert::ToInt16(this->newCharacter->getDexterity())));
+		//Assign constitution
+		this->constitutionTextBoxOutput->Text = Convert::ToString((Convert::ToInt16(this->newCharacter->getConstitution())));
+		//Assign intelligence
+		this->intelligenceeTextBoxOutput->Text = Convert::ToString((Convert::ToInt16(this->newCharacter->getIntelligence())));
+		//Assign wisdom
+		this->wisdomTextBoxOutput->Text = Convert::ToString((Convert::ToInt16(this->newCharacter->getWisdom())));
+		//Assign charisma
+		this->charismaTextBoxOutput->Text = Convert::ToString((Convert::ToInt16(this->newCharacter->getCharisma())));
 	}
 };
 }

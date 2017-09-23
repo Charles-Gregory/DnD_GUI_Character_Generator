@@ -147,7 +147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Heading.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>36</value>
   </data>
   <data name="additionalOptionsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -177,7 +177,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;additionalOptionsLabel.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>35</value>
   </data>
   <data name="raceCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -201,7 +201,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;raceCheckBox.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>34</value>
   </data>
   <data name="raceComboBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -279,7 +279,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;raceComboBox.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>33</value>
   </data>
   <data name="firstNameCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -303,7 +303,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;firstNameCheckBox.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>32</value>
   </data>
   <data name="firstNameTextBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -339,7 +339,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;firstNameTextBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>14</value>
   </data>
   <data name="lastNameCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -367,7 +367,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lastNameCheckBox.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>31</value>
   </data>
   <data name="lastNameTextBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -403,7 +403,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lastNameTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>13</value>
   </data>
   <data name="hairColourCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -430,7 +430,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;hairColourCheckBox.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>30</value>
   </data>
   <data name="hairColourComboBox.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -517,37 +517,37 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;hairColourComboBox.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>29</value>
   </data>
-  <data name="characterLabel.AutoSize" type="System.Boolean, mscorlib">
+  <data name="characterTraitsLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="characterLabel.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="characterTraitsLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
-  <data name="characterLabel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="characterTraitsLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 62</value>
   </data>
-  <data name="characterLabel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="characterTraitsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 17</value>
   </data>
-  <data name="characterLabel.TabIndex" type="System.Int32, mscorlib">
+  <data name="characterTraitsLabel.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="characterLabel.Text" xml:space="preserve">
+  <data name="characterTraitsLabel.Text" xml:space="preserve">
     <value>Character traits:</value>
   </data>
-  <data name="&gt;&gt;characterLabel.Name" xml:space="preserve">
-    <value>characterLabel</value>
+  <data name="&gt;&gt;characterTraitsLabel.Name" xml:space="preserve">
+    <value>characterTraitsLabel</value>
   </data>
-  <data name="&gt;&gt;characterLabel.Type" xml:space="preserve">
+  <data name="&gt;&gt;characterTraitsLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;characterLabel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;characterTraitsLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;characterLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <data name="&gt;&gt;characterTraitsLabel.ZOrder" xml:space="preserve">
+    <value>28</value>
   </data>
   <data name="firstNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -574,7 +574,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;firstNameLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>27</value>
   </data>
   <data name="lastNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -604,7 +604,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lastNameLabel.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>26</value>
   </data>
   <data name="hairColourLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -634,7 +634,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;hairColourLabel.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>25</value>
   </data>
   <data name="raceLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -664,7 +664,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;raceLabel.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>24</value>
   </data>
   <data name="heightLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -694,7 +694,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;heightLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>23</value>
   </data>
   <data name="ageLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -724,7 +724,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ageLabel.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>22</value>
   </data>
   <data name="firstNameTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 87</value>
@@ -754,7 +754,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;firstNameTextBoxOutput.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>21</value>
   </data>
   <data name="lastNameTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 111</value>
@@ -784,7 +784,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lastNameTextBoxOutput.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>20</value>
   </data>
   <data name="hairColourTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 135</value>
@@ -814,7 +814,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;hairColourTextBoxOutput.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>19</value>
   </data>
   <data name="raceTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 159</value>
@@ -844,7 +844,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;raceTextBoxOutput.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>18</value>
   </data>
   <data name="heightTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 183</value>
@@ -874,7 +874,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;heightTextBoxOutput.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>17</value>
   </data>
   <data name="ageTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 207</value>
@@ -904,10 +904,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ageTextBoxOutput.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>16</value>
   </data>
   <data name="randomiseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 243</value>
+    <value>215, 352</value>
   </data>
   <data name="randomiseButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -928,7 +928,418 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;randomiseButton.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="characterAbilitiesLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="characterAbilitiesLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="characterAbilitiesLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="characterAbilitiesLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 244</value>
+  </data>
+  <data name="characterAbilitiesLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 17</value>
+  </data>
+  <data name="characterAbilitiesLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="characterAbilitiesLabel.Text" xml:space="preserve">
+    <value>Character abilities:</value>
+  </data>
+  <data name="&gt;&gt;characterAbilitiesLabel.Name" xml:space="preserve">
+    <value>characterAbilitiesLabel</value>
+  </data>
+  <data name="&gt;&gt;characterAbilitiesLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;characterAbilitiesLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;characterAbilitiesLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="strengthLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="strengthLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="strengthLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 272</value>
+  </data>
+  <data name="strengthLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="strengthLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="strengthLabel.Text" xml:space="preserve">
+    <value>Strength:</value>
+  </data>
+  <data name="&gt;&gt;strengthLabel.Name" xml:space="preserve">
+    <value>strengthLabel</value>
+  </data>
+  <data name="&gt;&gt;strengthLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;strengthLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;strengthLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="strengthTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 268</value>
+  </data>
+  <data name="strengthTextBoxOutput.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="strengthTextBoxOutput.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="strengthTextBoxOutput.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="strengthTextBoxOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="strengthTextBoxOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="strengthTextBoxOutput.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;strengthTextBoxOutput.Name" xml:space="preserve">
+    <value>strengthTextBoxOutput</value>
+  </data>
+  <data name="&gt;&gt;strengthTextBoxOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;strengthTextBoxOutput.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;strengthTextBoxOutput.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="dexterityLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dexterityLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dexterityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 318</value>
+  </data>
+  <data name="dexterityLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="dexterityLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="dexterityLabel.Text" xml:space="preserve">
+    <value>Dexterity:</value>
+  </data>
+  <data name="&gt;&gt;dexterityLabel.Name" xml:space="preserve">
+    <value>dexterityLabel</value>
+  </data>
+  <data name="&gt;&gt;dexterityLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dexterityLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dexterityLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="dexterityTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 314</value>
+  </data>
+  <data name="dexterityTextBoxOutput.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="dexterityTextBoxOutput.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="dexterityTextBoxOutput.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="dexterityTextBoxOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="dexterityTextBoxOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="dexterityTextBoxOutput.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;dexterityTextBoxOutput.Name" xml:space="preserve">
+    <value>dexterityTextBoxOutput</value>
+  </data>
+  <data name="&gt;&gt;dexterityTextBoxOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dexterityTextBoxOutput.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dexterityTextBoxOutput.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="constitutionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="constitutionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="constitutionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 269</value>
+  </data>
+  <data name="constitutionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="constitutionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="constitutionLabel.Text" xml:space="preserve">
+    <value>Constitution:</value>
+  </data>
+  <data name="&gt;&gt;constitutionLabel.Name" xml:space="preserve">
+    <value>constitutionLabel</value>
+  </data>
+  <data name="&gt;&gt;constitutionLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;constitutionLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;constitutionLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="constitutionTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 265</value>
+  </data>
+  <data name="constitutionTextBoxOutput.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="constitutionTextBoxOutput.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="constitutionTextBoxOutput.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="constitutionTextBoxOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="constitutionTextBoxOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="constitutionTextBoxOutput.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;constitutionTextBoxOutput.Name" xml:space="preserve">
+    <value>constitutionTextBoxOutput</value>
+  </data>
+  <data name="&gt;&gt;constitutionTextBoxOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;constitutionTextBoxOutput.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;constitutionTextBoxOutput.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="intelligenceLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="intelligenceLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="intelligenceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 318</value>
+  </data>
+  <data name="intelligenceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="intelligenceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="intelligenceLabel.Text" xml:space="preserve">
+    <value>Intelligence:</value>
+  </data>
+  <data name="&gt;&gt;intelligenceLabel.Name" xml:space="preserve">
+    <value>intelligenceLabel</value>
+  </data>
+  <data name="&gt;&gt;intelligenceLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;intelligenceLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;intelligenceLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="intelligenceeTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 314</value>
+  </data>
+  <data name="intelligenceeTextBoxOutput.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="intelligenceeTextBoxOutput.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="intelligenceeTextBoxOutput.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="intelligenceeTextBoxOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="intelligenceeTextBoxOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="intelligenceeTextBoxOutput.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;intelligenceeTextBoxOutput.Name" xml:space="preserve">
+    <value>intelligenceeTextBoxOutput</value>
+  </data>
+  <data name="&gt;&gt;intelligenceeTextBoxOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;intelligenceeTextBoxOutput.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;intelligenceeTextBoxOutput.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="wisdomLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="wisdomLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="wisdomLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 269</value>
+  </data>
+  <data name="wisdomLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="wisdomLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="wisdomLabel.Text" xml:space="preserve">
+    <value>Wisdom:</value>
+  </data>
+  <data name="&gt;&gt;wisdomLabel.Name" xml:space="preserve">
+    <value>wisdomLabel</value>
+  </data>
+  <data name="&gt;&gt;wisdomLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wisdomLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wisdomLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="wisdomTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 265</value>
+  </data>
+  <data name="wisdomTextBoxOutput.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="wisdomTextBoxOutput.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="wisdomTextBoxOutput.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="wisdomTextBoxOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="wisdomTextBoxOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="wisdomTextBoxOutput.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;wisdomTextBoxOutput.Name" xml:space="preserve">
+    <value>wisdomTextBoxOutput</value>
+  </data>
+  <data name="&gt;&gt;wisdomTextBoxOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wisdomTextBoxOutput.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wisdomTextBoxOutput.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="charismaLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="charismaLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="charismaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 318</value>
+  </data>
+  <data name="charismaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="charismaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="charismaLabel.Text" xml:space="preserve">
+    <value>Charisma:</value>
+  </data>
+  <data name="&gt;&gt;charismaLabel.Name" xml:space="preserve">
+    <value>charismaLabel</value>
+  </data>
+  <data name="&gt;&gt;charismaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;charismaLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;charismaLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="charismaTextBoxOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>435, 314</value>
+  </data>
+  <data name="charismaTextBoxOutput.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>280, 20</value>
+  </data>
+  <data name="charismaTextBoxOutput.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="charismaTextBoxOutput.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="charismaTextBoxOutput.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 20</value>
+  </data>
+  <data name="charismaTextBoxOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="charismaTextBoxOutput.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Center</value>
+  </data>
+  <data name="&gt;&gt;charismaTextBoxOutput.Name" xml:space="preserve">
+    <value>charismaTextBoxOutput</value>
+  </data>
+  <data name="&gt;&gt;charismaTextBoxOutput.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;charismaTextBoxOutput.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;charismaTextBoxOutput.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -937,7 +1348,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>494, 279</value>
+    <value>494, 385</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
