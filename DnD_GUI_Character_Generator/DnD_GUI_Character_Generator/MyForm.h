@@ -420,12 +420,14 @@ namespace DnD_GUI_Character_Generator {
 	}
 	private: System::Void ComboBoxLabel1_Click(System::Object^  sender, System::EventArgs^  e) {
 	}
+	int selectedIndexRace = 0;
 	private: System::Void raceCheckBox_OnCheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		if (this->raceCheckBox->Checked == true) {
 			this->raceComboBox->Enabled = true;
-			this->raceComboBox->SelectedIndex = 0;
+			this->raceComboBox->SelectedIndex = selectedIndexRace;
 		}
 		else {
+			selectedIndexRace = raceComboBox->SelectedIndex;
 			this->raceComboBox->Enabled = false;
 		}
 	}
@@ -449,12 +451,14 @@ namespace DnD_GUI_Character_Generator {
 			this->lastNameTextBox->Visible = false;
 		}
 	}
+	int selectedIndexHairColour = 0;  // Previous hair colour index
 	private: System::Void hairColourCheckBox_CheckedChanged(System::Object^  sender, System::EventArgs^  e) {
 		if (this->hairColourCheckBox->Checked == true) {
 			this->hairColourComboBox->Enabled = true;
-			this->hairColourComboBox->SelectedIndex = 0;
+			this->hairColourComboBox->SelectedIndex = selectedIndexHairColour;
 		}
 		else {
+			selectedIndexHairColour = hairColourComboBox->SelectedIndex;
 			this->hairColourComboBox->Enabled = false;
 		}
 	}
@@ -490,7 +494,6 @@ namespace DnD_GUI_Character_Generator {
 			this->newCharacter->setRace(this->raceComboBox->Text);
 			this->raceTextBoxOutput->Text = this->raceComboBox->Text;
 		}
-
 		//Randomise all character traits but only assign those that have not been manually entered
 		this->newCharacter->customRandomise(isFirstName, isLastName, isHairColour, isRace);
 		//Assign first name
